@@ -10,9 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       issues: write
+    permissions:
+      issues: write
     steps:
       - env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ISSUE: ${{ github.event.issue.html_url }}
         run: |
-          gh issue delete $ISSUE --yes
+          gh issue comment $ISSUE --body "This issue was tranfered from Wiki repository. Please do not create issues there!"
+          gh issue transfer $ISSUE StoryAnvil/ResourcesAndIssues
