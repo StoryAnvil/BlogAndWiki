@@ -10,8 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       issues: write
-    permissions:
-      issues: write
     steps:
       - env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
