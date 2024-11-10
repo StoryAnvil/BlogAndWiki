@@ -11,16 +11,8 @@ jobs:
     permissions:
       issues: write
     steps:
-      - name: Generate a token
-        id: generate-token
-        uses: actions/create-github-app-token@v1
-        with:
-          app-id: ${{ vars.APP_ID }}
-          private-key: ${{ secrets.APP_PRIVATE_KEY }}
-      - name: Tranfer the issue
-        env:
-          GH_TOKEN: ${{ steps.generate-token.outputs.token }}
+      - env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ISSUE: ${{ github.event.issue.html_url }}
         run: |
-          gh issue comment $ISSUE --body "This issue was tranfered from Wiki repository. Please do not create issues there!"
-          gh issue transfer $ISSUE StoryAnvil/ResourcesAndIssues
+          gh issue delete $ISSUE --yes
