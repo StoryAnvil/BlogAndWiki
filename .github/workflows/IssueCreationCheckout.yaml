@@ -11,8 +11,15 @@ jobs:
     permissions:
       issues: write
     steps:
-      - env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Generate a token
+        id: generate-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ vars.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+      - name: Tranfer the issue
+        env:
+          GH_TOKEN: ${{ steps.generate-token.outputs.token }}
           ISSUE: ${{ github.event.issue.html_url }}
         run: |
           gh issue comment $ISSUE --body "This issue was tranfered from Wiki repository. Please do not create issues there!"
