@@ -1,0 +1,8 @@
+name: Problem with wiki
+description: Any problems with wiki
+title: "⚠️ Invalid"
+body:
+  - type: markdown
+    attributes:
+      value: "Wiki realted issues located [here](https://github.com/StoryAnvil/ResourcesAndIssues/issues/new?assignees=&labels=Project%3A+WIKI&projects=&template=WikiReport.yml&title=%5BWIKI%5D+%3Ctitle+here%3E)."
+      
