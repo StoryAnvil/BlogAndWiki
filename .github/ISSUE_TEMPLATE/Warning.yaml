@@ -4,7 +4,12 @@ title: "⚠️ Invalid"
 body:
   - type: markdown
     attributes:
-      value: "Wiki realted issues located [here](https://github.com/StoryAnvil/ResourcesAndIssues/issues/new?assignees=&labels=Project%3A+WIKI&projects=&template=WikiReport.yml&title=%5BWIKI%5D+%3Ctitle+here%3E)."
+      value: |
+        # Wiki realted issues located [here](https://github.com/StoryAnvil/ResourcesAndIssues/issues/new?assignees=&labels=Project%3A+WIKI&projects=&template=WikiReport.yml&title=%5BWIKI%5D+%3Ctitle+here%3E).
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        # WHY ARE YOU SCROLLING????
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        # THERE IS NO POINT!
   - type: input
     id: prevent1
     attributes:
@@ -34,4 +39,6 @@ body:
         - label: This issue should be deleted
           required: true
         - label: There is no point in creating this
+          required: true
+        - label: ⚠️🚩This issue probably will be auto-deleted by github actions!
           required: true
