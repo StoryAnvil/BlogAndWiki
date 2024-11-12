@@ -12,7 +12,8 @@
                 "icon_url": "https://cdn.modrinth.com/data/zGOnpakx/c245dc5a436330001fc3e8cf47939ad06df502ed_96.webp",
                 "gallery": [
                     {"url": "https://cdn.modrinth.com/data/zGOnpakx/images/c1c507ca8fa1a1a4ae2385aa5c688a72c7d7d584.png"}
-                ]
+                ],
+                "project_type": "mod"
             },
 
             "platforms": {
@@ -37,7 +38,8 @@
                     {"url": "https://cdn.modrinth.com/data/NWVKDeh6/images/6df793678c06226562dab60fe82acf68517560ca.png"},
                     {"url": "https://cdn.modrinth.com/data/NWVKDeh6/images/8d9059ecbfe921c332c6cb44dcf037307596d43c.png"},
                     {"url": "https://cdn.modrinth.com/data/NWVKDeh6/images/aa337f32939e4b9e754058016ad882236f3fe856.png"}
-                ]
+                ],
+                "project_type": "modpack"
             },
 
             "platforms": {
@@ -57,7 +59,8 @@
                 "gallery": [
                     {"url": "https://media.forgecdn.net/attachments/1012/271/2024-11-11_19.png"},
                     {"url": "https://media.forgecdn.net/attachments/1012/900/2024-11-12_15.png"}
-                ]
+                ],
+                "project_type": "resource pack"
             },
 
             "platforms": {
