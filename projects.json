@@ -53,6 +53,7 @@
             "data": {},
             "datapack": false,
             "archived": false,
+            "wiki": "https://storyanvil.github.io/page?wiki=projects/oreHighlighter",
             "rawdata": {
                 "description": "Ore highlights compatible with create, mekanism, ad astra and others",
                 "icon_url": "https://media.forgecdn.net/avatars/thumbnails/1115/368/256/256/638669291250412900.png",
