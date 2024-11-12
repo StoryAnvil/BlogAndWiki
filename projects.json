@@ -72,7 +72,8 @@
             }
         },
         {
-            "id": "stoppoint"
+            "id": "stoppoint",
+            "rawdata": {}
         }
     ]
 }
