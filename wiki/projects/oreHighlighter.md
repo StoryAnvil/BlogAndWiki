@@ -16,3 +16,8 @@
 | 10.4.9.61 | [Mekanism](https://www.curseforge.com/minecraft/mc-mods/mekanism) |
 | 1.0.0 | [Mekanism: Ad Astra ores](https://www.curseforge.com/minecraft/mc-mods/mekanism-ad-astra-ores) |
 | [Forge] Ad Astra 1.15.18 | [Ad Astra](https://www.curseforge.com/minecraft/mc-mods/ad-astra) |
+### V1.0.1
+| Last tested mod version | Mod name |
+|-|-|
+| 0.10.3 | [Oritech](https://www.curseforge.com/minecraft/mc-mods/oritech) |
+| 1.19.2-3.8.4.50 | [Tconstruct](https://www.curseforge.com/minecraft/mc-mods/tinkers-construct) 
