@@ -7,6 +7,13 @@
             "datapack": true,
             "archived": false,
             "wiki": "https://storyanvil.github.io/page?wiki=projects/creepME",
+            "rawdata": {
+                "description": "Spawns creeper every 5 seconds!",
+                "icon_url": "https://cdn.modrinth.com/data/zGOnpakx/c245dc5a436330001fc3e8cf47939ad06df502ed_96.webp",
+                "gallery": [
+                    {"url": "https://cdn.modrinth.com/data/zGOnpakx/images/c1c507ca8fa1a1a4ae2385aa5c688a72c7d7d584.png"}
+                ]
+            },
 
             "platforms": {
                 "curseforge": "https://www.curseforge.com/minecraft/data-packs/creepme",
@@ -22,6 +29,16 @@
             "data": {},
             "datapack": false,
             "archived": true,
+            "rawdata": {
+                "description": "Fresh adventure modpack with RPG elements. Quests implemented",
+                "icon_url": "https://cdn.modrinth.com/data/NWVKDeh6/46038969bcf4c1704947ad65cf19828a2bd0da4b_96.webp",
+                "gallery": [
+                    {"url": "https://cdn.modrinth.com/data/NWVKDeh6/images/4029d67caf8fc7d89453c71189181d5388fac984.png"},
+                    {"url": "https://cdn.modrinth.com/data/NWVKDeh6/images/6df793678c06226562dab60fe82acf68517560ca.png"},
+                    {"url": "https://cdn.modrinth.com/data/NWVKDeh6/images/8d9059ecbfe921c332c6cb44dcf037307596d43c.png"},
+                    {"url": "https://cdn.modrinth.com/data/NWVKDeh6/images/aa337f32939e4b9e754058016ad882236f3fe856.png"}
+                ]
+            },
 
             "platforms": {
                 "modrinth": "https://modrinth.com/modpack/world-78",
@@ -34,6 +51,14 @@
             "data": {},
             "datapack": false,
             "archived": false,
+            "rawdata": {
+                "description": "Ore highlights compatible with create, mekanism, ad astra and others",
+                "icon_url": "https://media.forgecdn.net/avatars/thumbnails/1115/368/256/256/638669291250412900.png",
+                "gallery": [
+                    {"url": "https://media.forgecdn.net/attachments/1012/271/2024-11-11_19.png"},
+                    {"url": "https://media.forgecdn.net/attachments/1012/900/2024-11-12_15.png"}
+                ]
+            },
 
             "platforms": {
                 "curseforge": "https://curseforge.com/minecraft/texture-packs/universal-ore-highlighter",
