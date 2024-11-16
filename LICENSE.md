@@ -1,5 +1,9 @@
 # StoryAnvil wiki content
 ```
+Copyright (c) 2024+, StoryAnvil Wiki Team (https://github.com/orgs/StoryAnvil/teams/wiki)
+```
+
+```
 Attribution 4.0 International
 
 =======================================================================
