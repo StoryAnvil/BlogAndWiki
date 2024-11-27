@@ -2,3 +2,8 @@ https://storyanvil.github.io/index.html
 https://storyanvil.github.io/page.html?wiki=home
 https://storyanvil.github.io/page.html?wiki=projects/creepME
 https://storyanvil.github.io/page.html?wiki=projects/oreHighlighter
+https://storyanvil.github.io/page.html?wiki=projects/cogwheel/home
+https://storyanvil.github.io/page.html?wiki=projects/cogwheel/multi
+https://storyanvil.github.io/page.html?wiki=projects/cogwheel/NPCs
+https://storyanvil.github.io/page.html?wiki=projects/cogwheel/runlocalized
+https://storyanvil.github.io/page.html?wiki=projects/cogwheel/schedule
