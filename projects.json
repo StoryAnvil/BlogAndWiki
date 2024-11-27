@@ -72,6 +72,30 @@
                 "pmc": "https://www.planetminecraft.com/texture-pack/universal-ore-highlights/"
             }
         },
+        
+        {
+            "id": "createtools",
+            "name": "Create Styled Tools",
+            "data": {},
+            "datapack": false,
+            "archived": false,
+            "rawdata": {
+                "description": "Create Styled tools!",
+                "icon_url": "https://media.forgecdn.net/avatars/thumbnails/1125/37/256/256/638682248498745158.png",
+                "gallery": [
+                    {"url": "https://media.forgecdn.net/attachments/1020/346/7ffdf3a98aecf2589a0c8c193d7b901720eb5c81.png"}
+                ],
+                "project_type": "resource pack"
+            },
+
+            "platforms": {
+                "curseforge": "https://www.curseforge.com/minecraft/texture-packs/create-tools",
+                "curseforge-id": "1143435",
+                "modrinth": "https://modrinth.com/resourcepack/create-styled",
+                "modrinth-id": "Z2IxZiHZ",
+                "pmc": "https://www.planetminecraft.com/texture-pack/create-styled-tools/"
+            }
+        },
         {
             "id": "stoppoint",
             "rawdata": {}

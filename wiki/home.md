@@ -14,6 +14,7 @@
             <br>
             <a href="https://storyanvil.github.io/page?wiki=projects/creepME"><img alt="Static Badge" src="https://img.shields.io/badge/-Wiki-gray?style=flat-square&logo=gitbook"></a>
             <a href="https://storyanvil.github.io/page?blog=RP_DP_Sources"><img alt="Static Badge" src="https://img.shields.io/badge/-Sources-gray?style=flat-square"></a>
+            <a href="https://storyanvil.github.io/?downloadid=creepme"><img alt="Static Badge" src="https://img.shields.io/badge/-Download-gray?style=flat-square"></a>
         </div>
     </div>
     <div style="width: 100%; background: rgb(24, 24, 24); padding: 15px; display: flex; box-sizing: border-box; margin-bottom: 5px;">
@@ -25,6 +26,18 @@
             <br>
             <a href="https://storyanvil.github.io/page?wiki=projects/oreHighlighter"><img alt="Static Badge" src="https://img.shields.io/badge/-Wiki-gray?style=flat-square&logo=gitbook"></a>
             <a href="https://storyanvil.github.io/page?blog=RP_DP_Sources"><img alt="Static Badge" src="https://img.shields.io/badge/-Sources-gray?style=flat-square"></a>
+            <a href="https://storyanvil.github.io/?downloadid=orehighligher"><img alt="Static Badge" src="https://img.shields.io/badge/-Download-gray?style=flat-square"></a>
+        </div>
+    </div>
+    <div style="width: 100%; background: rgb(24, 24, 24); padding: 15px; display: flex; box-sizing: border-box; margin-bottom: 5px;">
+        <img src="https://media.forgecdn.net/avatars/thumbnails/1125/37/256/256/638682248498745158.png" style="max-width: 96px; max-height: 96px;">
+        <div style="margin: 15px;">
+            <b style="font-size: x-large;">Create Styled Tools</b>
+            <br>
+            Tools in create's style
+            <br>
+            <a href="https://storyanvil.github.io/page?blog=RP_DP_Sources"><img alt="Static Badge" src="https://img.shields.io/badge/-Sources-gray?style=flat-square"></a>
+            <a href="https://storyanvil.github.io/?downloadid=createtools"><img alt="Static Badge" src="https://img.shields.io/badge/-Download-gray?style=flat-square"></a>
         </div>
     </div>
 </div>
