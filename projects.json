@@ -1,6 +1,25 @@
 {
     "list": [
         {
+            "id": "subnormal",
+            "name": "SubNormal",
+            "data": {},
+            "datapack": false,
+            "archived": false,
+            "wiki": "https://storyanvil.github.io/page?wiki=projects/creepME",
+            "rawdata": {
+                "description": "Bedrock jail map with ability to reset levels without reinstalling map",
+                "icon_url": "https://storyanvil.github.io/assets/subnormal.png",
+                "gallery": [
+                    {"url": "https://storyanvil.github.io/assets/blank.png"}
+                ],
+                "project_type": "mod"
+            },
+
+            "platforms": {
+            }
+        },
+        {
             "id": "creepme",
             "name": "CreepME!",
             "data": {},
