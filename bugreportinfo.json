@@ -1,14 +1,20 @@
 {
   "creepme": {
-    "github": "unavalible"
+    "github": "unavalible",
+    "form": "https://docs.google.com/forms/d/e/1FAIpQLScDSxKB3nfs3mKEPm_wcY_8DRJOoiSRqzdyjhMihRNjRhJ7-Q/viewform?usp=sf_link"
   },
   "world-78": {
     "unsupported": true
   },
   "orehighligher": {
-    "github": "https://github.com/StoryAnvil/ResourcesAndIssues/issues/new?assignees=&labels=Type%3A+enhancement%2CProject+type%3A+Resource+pack%2CProject%3A+OreBorders&projects=&template=uoh.yaml&title=%5BRP-OH%5D+%3Ctitle+here%3E"
+    "github": "https://github.com/StoryAnvil/ResourcesAndIssues/issues/new?assignees=&labels=Type%3A+enhancement%2CProject+type%3A+Resource+pack%2CProject%3A+OreBorders&projects=&template=uoh.yaml&title=%5BRP-OH%5D+%3Ctitle+here%3E",
+    "form": "https://docs.google.com/forms/d/e/1FAIpQLScDSxKB3nfs3mKEPm_wcY_8DRJOoiSRqzdyjhMihRNjRhJ7-Q/viewform?usp=sf_link"
   },
   "createtools": {
     "unsupported": true
+  },
+  "wiki": {
+    "github": "https://github.com/StoryAnvil/ResourcesAndIssues/issues/new?assignees=&labels=Project%3A+WIKI&projects=&template=WikiReport.yml&title=%5BWIKI%5D+%3Ctitle+here%3E",
+    "form": "https://docs.google.com/forms/d/e/1FAIpQLScDSxKB3nfs3mKEPm_wcY_8DRJOoiSRqzdyjhMihRNjRhJ7-Q/viewform?usp=sf_link"
   }
 }
