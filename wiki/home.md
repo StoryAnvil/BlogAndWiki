@@ -12,9 +12,9 @@
             <br>
             Spawns creeper every 5 seconds!
             <br>
-            <a href="https://storyanvil.github.io/page?wiki=projects/creepME"><img alt="Static Badge" src="https://img.shields.io/badge/-Wiki-gray?style=flat-square&logo=gitbook"></a>
-            <a href="https://storyanvil.github.io/page?blog=RP_DP_Sources"><img alt="Static Badge" src="https://img.shields.io/badge/-Sources-gray?style=flat-square"></a>
-            <a href="https://storyanvil.github.io/?downloadid=creepme"><img alt="Static Badge" src="https://img.shields.io/badge/-Download-gray?style=flat-square"></a>
+            <a href="https://storyanvil.github.io/page?wiki=projects/creepME">Wiki</a>
+            <a href="https://storyanvil.github.io/page?blog=RP_DP_Sources">Sources</a>
+            <a href="https://storyanvil.github.io/?downloadid=creepme">Download</a>
         </div>
     </div>
     <div style="width: 100%; background: rgb(24, 24, 24); padding: 15px; display: flex; box-sizing: border-box; margin-bottom: 5px;">
@@ -24,9 +24,9 @@
             <br>
             Ore highlights compatible with create, mekanism, ad astra and others
             <br>
-            <a href="https://storyanvil.github.io/page?wiki=projects/oreHighlighter"><img alt="Static Badge" src="https://img.shields.io/badge/-Wiki-gray?style=flat-square&logo=gitbook"></a>
-            <a href="https://storyanvil.github.io/page?blog=RP_DP_Sources"><img alt="Static Badge" src="https://img.shields.io/badge/-Sources-gray?style=flat-square"></a>
-            <a href="https://storyanvil.github.io/?downloadid=orehighligher"><img alt="Static Badge" src="https://img.shields.io/badge/-Download-gray?style=flat-square"></a>
+            <a href="https://storyanvil.github.io/page?wiki=projects/oreHighlighter">Wiki</a>
+            <a href="https://storyanvil.github.io/page?blog=RP_DP_Sources">Sources</a>
+            <a href="https://storyanvil.github.io/?downloadid=orehighligher">Download</a>
         </div>
     </div>
     <div style="width: 100%; background: rgb(24, 24, 24); padding: 15px; display: flex; box-sizing: border-box; margin-bottom: 5px;">
@@ -36,8 +36,8 @@
             <br>
             Tools in create's style
             <br>
-            <a href="https://storyanvil.github.io/page?blog=RP_DP_Sources"><img alt="Static Badge" src="https://img.shields.io/badge/-Sources-gray?style=flat-square"></a>
-            <a href="https://storyanvil.github.io/?downloadid=createtools"><img alt="Static Badge" src="https://img.shields.io/badge/-Download-gray?style=flat-square"></a>
+            <a href="https://storyanvil.github.io/page?blog=RP_DP_Sources">Sources</a>
+            <a href="https://storyanvil.github.io/?downloadid=createtools">Download</a>
         </div>
     </div>
 </div>
