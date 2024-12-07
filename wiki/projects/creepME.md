@@ -3,4 +3,4 @@
 > **Is a datapack featuring extreme challange by spawning creepers every 5 seconds near each player, forcing everyone to surivial and forcing hard difficulty**
 
 ### Whould you accept?
-_press on storyanvil badge on the top_
+_press on storyanvil badge on the top to download from our website_
