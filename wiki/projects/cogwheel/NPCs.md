@@ -1,3 +1,5 @@
+<fromDevsToDevs></fromDevsToDevs>
+
 # NPC
 
 > NPC is entity added by **StoryAnvil cogwheel[^cogwheel]**
