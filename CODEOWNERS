@@ -1,2 +1,4 @@
-* @StoryAnvil/Wiki
-CODEOWNERS @denisJaved
+* @denisJaved
+wiki/* @StoryAnvil/Wiki
+links/* @StoryAnvil/Wiki
+blog/* @denisJaved
