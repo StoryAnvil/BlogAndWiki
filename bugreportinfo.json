@@ -16,5 +16,9 @@
   "wiki": {
     "github": "https://github.com/StoryAnvil/ResourcesAndIssues/issues/new?assignees=&labels=Project%3A+WIKI&projects=&template=WikiReport.yml&title=%5BWIKI%5D+%3Ctitle+here%3E",
     "form": "https://docs.google.com/forms/d/e/1FAIpQLScDSxKB3nfs3mKEPm_wcY_8DRJOoiSRqzdyjhMihRNjRhJ7-Q/viewform?usp=sf_link"
+  },
+  "underground": {
+    "github": "https://github.com/StoryAnvil/ResourcesAndIssues/issues/new?assignees=&labels=Type%3A+bug%2CProject+type%3A+Modpack%2CProject%3A+UG&projects=&template=UG.yaml&title=%5BMP-UG%5D+%3Ctitle+here%3E",
+    "form": "https://docs.google.com/forms/d/e/1FAIpQLScDSxKB3nfs3mKEPm_wcY_8DRJOoiSRqzdyjhMihRNjRhJ7-Q/viewform?usp=sf_link"
   }
 }
