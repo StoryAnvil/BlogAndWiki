@@ -21,3 +21,9 @@
 |-|-|
 | 0.10.3 | [Oritech](https://www.curseforge.com/minecraft/mc-mods/oritech) |
 | 1.19.2-3.8.4.50 | [Tconstruct](https://www.curseforge.com/minecraft/mc-mods/tinkers-construct) 
+### V1.0.2
+| Last tested mod version | Mod name |
+|-|-|
+| 1.20.4-11.6.1-181 | [Immersive Engineering](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering) |
+| 4.1.7+1.20.1-fabric | [Palladium](https://modrinth.com/mod/threetag-palladium) 
+| 1.20.1-11.0.6.70 | [Thermal Foundation](https://www.curseforge.com/minecraft/mc-mods/thermal-foundation) 
