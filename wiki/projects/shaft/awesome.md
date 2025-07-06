@@ -2,7 +2,10 @@
 
 # Datapack that use ShaftAPI
 
-> No datapack currently
+| Project Name | Project's Uniqe Id | Project's Version |
+|-|-|-|
+| <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/home')">Cogwheel</a> | storyanvil_cogwheel | 1 |
+
 
 ## How to add your datapack in this list
 
