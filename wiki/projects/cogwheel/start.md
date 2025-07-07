@@ -34,4 +34,15 @@ For example:
 ## Spawning NPCs
 To spawn NPC you can use `/summon storyanvil_cogwheel:npc` command.
 
-#### To know how to use NPCs and do other cool stuff read about <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/cogapi')">Cogwheel API</a>
+## Labels
+Some of commands support adding labels. To add label use syntax below:
+```
+label name:::your code
+```
+
+For example to add label named `test` to pathfind method use:
+```
+test:::pathfind(a:25 145 64)
+```
+
+#### To know how to use NPCs, labels and do other cool stuff read about <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/cogapi')">Cogwheel API</a>
