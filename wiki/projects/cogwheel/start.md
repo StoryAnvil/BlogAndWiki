@@ -15,11 +15,27 @@ Let's test Cogwheel Engine by creating script that writes `Hello, World!` in cha
 1. Create file `.minecraft/config/cog/hello_world.sa`.
 2. Paste following code in it:
 ```
-getLevel(level)
-chat(level:Hello, World!)
+Cogwheel.log("Hello World")
 ```
 3. Type `/@storyanvil dispatch-script hello_world.sa` in chat
-4. You will see `Hello, World!` in chat!
+4. You will see `Hello World!` in miencraft logs
+
+## Varibles
+To store output of method in varible use syntax below:
+```
+<varible name> = <expression>
+```
+
+For example, code below will find npc with tag `npc1` and put it in varible named `actor`:
+```
+actor = Cogwheel.getTaggedNPC("npc1")
+```
+
+Then varibles can be passed in other expressions.
+For example, code below will log value of varible named `actor` to minecraft logs:
+```
+Cogwheel.log(actor)
+```
 
 ## Leaving comments in CogScripts
 When writing big scripts you probably want to include some comments in your code so you can leave some notes there.
@@ -34,4 +50,4 @@ For example:
 ## Spawning NPCs
 To spawn NPC you can use `/summon storyanvil_cogwheel:npc` command.
 
-#### To know how to use NPCs and do other cool stuff read about <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/cogapi')">Cogwheel API</a>
+#### For more information read <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/cogmaster')">CogMaster Object</a>
