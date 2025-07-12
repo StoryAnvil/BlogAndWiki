@@ -23,4 +23,5 @@ And you can report any bugs you found on [github issues](https://github.com/Stor
 - <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/npc')">NPC object</a>
 - <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/array')">Arrays</a>
 - <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/switch')">Switch statement</a>
+- <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/addons/start')">Creating Cogwheel Engine Addons</a>
 - <a onclick="$story.to('/wiki/dev.html?p=wiki/projects/cogwheel/awesome')">Projects that use Cogwheel Engine</a>
