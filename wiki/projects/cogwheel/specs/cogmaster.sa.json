@@ -1,0 +1,60 @@
+{
+    "type": "OBJECT",
+    "name": "CogMaster",
+    "summary": "Main Cogwheel Engine object.",
+    "version": "0.1.0 BETA",
+
+    "methods": {
+        "log": {
+            "argTypes": ["*"],
+            "argNames": ["obj"],
+            "summary": "Print provided object",
+            "return": "null"
+        },
+        "str": {
+            "argTypes": ["*"],
+            "argNames": ["obj"],
+            "summary": "Converts provided object to <a data-cg=\"cogstring\">CogString</a>",
+            "return": "cogstring",
+            "text": "This method must be used to create strings in varibles because varibles can't be created without running method.$$ $$For example, code below is invalid:$$```$$a = \"Hello World!\" $$```$$To fix this code use:$$```$$a = Cogwheel.str(\"Hello World!\")$$```$$## Objects other than CogStrings$$`Cogwheel.str` supports absolutly any object and converts it to string.$$Try experementing a bit to know how this works"
+        },
+        "int": {
+            "argTypes": ["coginteger"],
+            "argNames": ["int"],
+            "summary": "Returns provided CogInteger",
+            "return": "coginteger",
+            "text": "This method is used to create varibles because this: `a = ^4` is not possible but `a = Cogwheel.int(^4)` is possible"
+        },
+        "getTaggedNPC": {
+            "argTypes": ["cogstring"],
+            "argNames": ["tag"],
+            "summary": "Finds and returns NPC with provided [tag](https://minecraft.wiki/w/Commands/tag)",
+            "return": "npc",
+            "noChainCalling": true
+        },
+        "true": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns true",
+            "return": "cogbool"
+        },
+        "false": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns false",
+            "return": "cogbool"
+        },
+        "getLevel": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns StoryLevel",
+            "return": "storylevel"
+        },
+        "disposeVariable": {
+            "argTypes": ["cogstring"],
+            "argNames": ["name"],
+            "summary": "Deletes varible with provided name",
+            "return": "null"
+        }
+    }
+}
