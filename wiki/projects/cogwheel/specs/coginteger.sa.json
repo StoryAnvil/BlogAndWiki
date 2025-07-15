@@ -1,0 +1,75 @@
+{
+    "type": "OBJECT",
+    "name": "CogInteger",
+    "summary": "CogInteger represents an integer",
+    "version": "0.1.0 BETA",
+
+    "methods": {
+        "add": {
+            "argTypes": ["coginteger"],
+            "argNames": ["i"],
+            "summary": "Adds provided integer to this one. Returns this integer",
+            "return": "coginteger"
+        },
+        "subtract": {
+            "argTypes": ["coginteger"],
+            "argNames": ["i"],
+            "summary": "Substracts provided integer from this one. Returns this integer",
+            "return": "coginteger"
+        },
+        "multiply": {
+            "argTypes": ["coginteger"],
+            "argNames": ["i"],
+            "summary": "Multiplies this integer by provided run. Returns this integer",
+            "return": "coginteger"
+        },
+        "divide": {
+            "argTypes": ["coginteger"],
+            "argNames": ["i"],
+            "summary": "Divides this integer by provided one. Returns this integer",
+            "return": "coginteger"
+        },
+        "clamp": {
+            "argTypes": ["coginteger", "coginteger"],
+            "argNames": ["min", "max"],
+            "summary": "If this integer smaller then provided min makes this integer equal to provided min or makes this integer eqaul to provided max if this integer is bigger then max",
+            "return": "coginteger"
+        },
+        "abs": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "If integer is smaller than 0 multiplies it by -1",
+            "return": "coginteger"
+        },
+        "toDouble": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Converts this integer to a double",
+            "return": "cogdouble"
+        },
+        "clone": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns new integer equal to this one",
+            "return": "coginteger"
+        },
+        "logMe": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Logs this CogMaster object in minecraft logs",
+            "return": "null"
+        },
+        "toString": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Same as running Cogwheel.str passing this object as argument",
+            "return": "cogstring"
+        },
+        "equals": {
+            "argTypes": ["*"],
+            "argNames": ["obj"],
+            "summary": "Check if provided object equals to this object",
+            "return": "cogbool"
+        }
+    }
+}

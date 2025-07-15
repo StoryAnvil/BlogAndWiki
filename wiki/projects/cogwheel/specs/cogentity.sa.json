@@ -1,0 +1,45 @@
+{
+    "type": "OBJECT",
+    "name": "CogEntity",
+    "summary": "Represents any minecraft entity including but not limiting to Cogwheel NPCs",
+    "version": "0.1.0 BETA",
+
+    "methods": {
+        "getEntityType": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns entity's registry id (for example minecraft:creeper)",
+            "return": "cogstring"
+        },
+        "getUUID": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns entity's UUID",
+            "return": "cogstring"
+        },
+        "toEntity": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns this entity as entity (this method only usefull for other objects like NPCs)",
+            "return": "cogentity"
+        },
+        "logMe": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Logs this CogMaster object in minecraft logs",
+            "return": "null"
+        },
+        "toString": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Same as running Cogwheel.str passing this object as argument",
+            "return": "cogstring"
+        },
+        "equals": {
+            "argTypes": ["*"],
+            "argNames": ["obj"],
+            "summary": "Check if provided object equals to this object",
+            "return": "cogbool"
+        }
+    }
+}

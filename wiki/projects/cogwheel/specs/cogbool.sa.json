@@ -1,0 +1,33 @@
+{
+    "type": "OBJECT",
+    "name": "CogBool",
+    "summary": "This object represents a boolean (TRUE or FALSE)",
+    "version": "0.1.0 BETA",
+
+    "methods": {
+        "net": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns FALSE if this boolean is TRUE, otherwise returns TRUE",
+            "return": "cogbool"
+        },
+        "logMe": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Logs this CogMaster object in minecraft logs",
+            "return": "null"
+        },
+        "toString": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Same as running Cogwheel.str passing this object as argument",
+            "return": "cogstring"
+        },
+        "equals": {
+            "argTypes": ["*"],
+            "argNames": ["obj"],
+            "summary": "Check if provided object equals to this object",
+            "return": "cogbool"
+        }
+    }
+}
