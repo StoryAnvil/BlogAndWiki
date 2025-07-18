@@ -1,0 +1,39 @@
+{
+    "type": "OBJECT",
+    "name": "StoryAction",
+    "summary": "Represents action sheduled for something (for example NPC)",
+    "version": "0.1.0 BETA",
+
+    "methods": {
+        "setLavel": {
+            "argTypes": ["cogstring"],
+            "argNames": ["label"],
+            "summary": "Changes action's label to provided one. Returns this storyaction",
+            "return": "storyaction"
+        },
+        "getLavel": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns label assigned to this action",
+            "return": "cogstring"
+        },
+        "logMe": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Logs this CogMaster object in minecraft logs",
+            "return": "null"
+        },
+        "toString": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Same as running Cogwheel.str passing this object as argument",
+            "return": "cogstring"
+        },
+        "equals": {
+            "argTypes": ["*"],
+            "argNames": ["obj"],
+            "summary": "Check if provided object equals to this object",
+            "return": "cogbool"
+        }
+    }
+}

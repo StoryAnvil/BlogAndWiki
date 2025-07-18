@@ -1,0 +1,39 @@
+{
+    "type": "OBJECT",
+    "name": "StoryLevel",
+    "summary": "This object represents minecraft world",
+    "version": "0.1.0 BETA",
+
+    "methods": {
+        "runCommand": {
+            "argTypes": ["cogstring"],
+            "argNames": ["command"],
+            "summary": "Runs provided command (command does not need slash in the beginning)",
+            "return": "storyaction"
+        },
+        "getPlayers": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns array that contains all players in this world",
+            "return": "cogarray"
+        },
+        "logMe": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Logs this CogMaster object in minecraft logs",
+            "return": "null"
+        },
+        "toString": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Same as running Cogwheel.str passing this object as argument",
+            "return": "cogstring"
+        },
+        "equals": {
+            "argTypes": ["*"],
+            "argNames": ["obj"],
+            "summary": "Check if provided object equals to this object",
+            "return": "cogbool"
+        }
+    }
+}

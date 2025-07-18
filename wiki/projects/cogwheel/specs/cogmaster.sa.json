@@ -55,6 +55,36 @@
             "argNames": ["name"],
             "summary": "Deletes varible with provided name",
             "return": "null"
+        },
+        "getEvent": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns event callback if script was dispatched by event handler",
+            "return": "event_callback"
+        },
+        "randomInt": {
+            "argTypes": ["coginteger", "coginteger"],
+            "argNames": ["min", "max"],
+            "summary": "Returns random integer between specified range",
+            "return": "coginteger"
+        },
+        "logMe": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Logs this CogMaster object in minecraft logs",
+            "return": "null"
+        },
+        "toString": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Same as running Cogwheel.str passing this object as argument",
+            "return": "cogstring"
+        },
+        "equals": {
+            "argTypes": ["*"],
+            "argNames": ["obj"],
+            "summary": "Check if provided object equals to this object",
+            "return": "cogbool"
         }
     }
 }

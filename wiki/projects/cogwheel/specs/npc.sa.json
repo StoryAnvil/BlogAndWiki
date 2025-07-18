@@ -1,0 +1,82 @@
+{
+    "type": "OBJECT",
+    "name": "NPC",
+    "summary": "Represents Cogwheel Engine NPC. All entity methods are avalible for NPC objects",
+    "version": "0.1.0 BETA",
+
+    "methods": {
+        "setName": {
+            "argTypes": ["cogstring"],
+            "argNames": ["name"],
+            "summary": "Changes NPC's name to a new one",
+            "return": "null"
+        },
+        "getName": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns NPC's name",
+            "return": "cogstring"
+        },
+        "setSkin": {
+            "argTypes": ["cogstring"],
+            "argNames": ["skin"],
+            "summary": "Changes NPC's skin name to a provided one. Skin texture is taken from resource location `storyanvil_cogwheel:textures/entity/npc/<skin name>`",
+            "return": "null"
+        },
+        "getSkin": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns NPC's skin name",
+            "return": "cogstring"
+        },
+        "chat": {
+            "argTypes": ["cogstring"],
+            "argNames": ["msg"],
+            "summary": "Makes NPC say provided string",
+            "return": "storyaction"
+        },
+        "pathfind": {
+            "argTypes": ["coginteger", "coginteger", "coginteger"],
+            "argNames": ["x", "y", "z"],
+            "summary": "Makes NPC find and follow path to provided coordinates",
+            "return": "storyaction"
+        },
+        "waitForLabel": {
+            "argTypes": ["cogstring"],
+            "argNames": ["label"],
+            "summary": "Makes NPC wait util StoryAction with provided name was executed",
+            "return": "storyaction"
+        },
+        "dialogChoices": {
+            "argTypes": ["cogstring", "cogstring", "cogstring", "cogstring"],
+            "argNames": ["choice1", "choice2", "choice3", "choice4..."],
+            "summary": "Allows player to choice one of provided dialog choices. You can provide any amount of cogstrings as arguments",
+            "return": "coginteger",
+            "noChainCalling": true
+        },
+        "toEntity": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns this NPC as entity. This is not required to run entity methods you can run any entity method on NPC",
+            "return": "cogentity"
+        },
+        "logMe": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Logs this CogMaster object in minecraft logs",
+            "return": "null"
+        },
+        "toString": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Same as running Cogwheel.str passing this object as argument",
+            "return": "cogstring"
+        },
+        "equals": {
+            "argTypes": ["*"],
+            "argNames": ["obj"],
+            "summary": "Check if provided object equals to this object",
+            "return": "cogbool"
+        }
+    }
+}
