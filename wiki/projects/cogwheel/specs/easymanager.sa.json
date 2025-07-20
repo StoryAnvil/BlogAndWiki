@@ -1,0 +1,27 @@
+{
+    "type": "OBJECT",
+    "name": "EasyManager",
+    "summary": "This is base object for other objects",
+    "version": "0.1.0 BETA",
+
+    "methods": {
+        "logMe": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Logs this CogMaster object in minecraft logs",
+            "return": "null"
+        },
+        "toString": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Same as running Cogwheel.str passing this object as argument",
+            "return": "cogstring"
+        },
+        "equals": {
+            "argTypes": ["*"],
+            "argNames": ["obj"],
+            "summary": "Check if provided object equals to this object",
+            "return": "cogbool"
+        }
+    }
+}

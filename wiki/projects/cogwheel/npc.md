@@ -1,3 +1,4 @@
+# ⚠️ THIS WIKI PAGE IS DEPERACTED! INFORMATION HERE CAN BE OUTDATED!
 # NPC object
 NPC object represents npc.
 

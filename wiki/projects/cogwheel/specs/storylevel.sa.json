@@ -2,6 +2,7 @@
     "type": "OBJECT",
     "name": "StoryLevel",
     "summary": "This object represents minecraft world",
+    "parent": "easymanager",
     "version": "0.1.0 BETA",
 
     "methods": {
@@ -14,26 +15,8 @@
         "getPlayers": {
             "argTypes": [],
             "argNames": [],
-            "summary": "Returns array that contains all players in this world",
+            "summary": "Returns array that contains all cogplayers in this world",
             "return": "cogarray"
-        },
-        "logMe": {
-            "argTypes": [],
-            "argNames": [],
-            "summary": "Logs this CogMaster object in minecraft logs",
-            "return": "null"
-        },
-        "toString": {
-            "argTypes": [],
-            "argNames": [],
-            "summary": "Same as running Cogwheel.str passing this object as argument",
-            "return": "cogstring"
-        },
-        "equals": {
-            "argTypes": ["*"],
-            "argNames": ["obj"],
-            "summary": "Check if provided object equals to this object",
-            "return": "cogbool"
         }
     }
 }

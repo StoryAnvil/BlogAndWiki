@@ -2,6 +2,7 @@
     "type": "OBJECT",
     "name": "CogMaster",
     "summary": "Main Cogwheel Engine object.",
+    "parent": "easymanager",
     "version": "0.1.0 BETA",
 
     "methods": {
@@ -68,23 +69,11 @@
             "summary": "Returns random integer between specified range",
             "return": "coginteger"
         },
-        "logMe": {
-            "argTypes": [],
-            "argNames": [],
-            "summary": "Logs this CogMaster object in minecraft logs",
-            "return": "null"
-        },
-        "toString": {
-            "argTypes": [],
-            "argNames": [],
-            "summary": "Same as running Cogwheel.str passing this object as argument",
-            "return": "cogstring"
-        },
-        "equals": {
+        "createList": {
             "argTypes": ["*"],
             "argNames": ["obj"],
-            "summary": "Check if provided object equals to this object",
-            "return": "cogbool"
+            "summary": "Creates list that contains provided object",
+            "return": "cogarray"
         }
     }
 }

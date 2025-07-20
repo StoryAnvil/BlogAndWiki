@@ -1,0 +1,16 @@
+{
+    "type": "OBJECT",
+    "name": "CogPlayer",
+    "summary": "This object represents minecraft player",
+    "parent": "cogentity,easymanager",
+    "version": "0.1.0 BETA",
+
+    "methods": {
+        "sendMessage": {
+            "argTypes": ["cogstring"],
+            "argNames": ["msg"],
+            "summary": "Sends player provided chat message",
+            "return": "null"
+        }
+    }
+}
