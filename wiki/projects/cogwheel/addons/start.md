@@ -1,7 +1,5 @@
 # Creating addons
-First, you should add Cogwheel Engine as gradle dependency.
-
-*TODO: Add maven repo to depend on Cogwheel Engine more easly*
+First, you should add Cogwheel Engine as gradle dependency. You can use one of maven repos listed <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/addons/maven')">here</a>
 
 ## Cogwheel Engine Infrustructure
 All objects accessible in CogScript are instances of `com.storyanvil.cogwheel.infrustructure.CogProprtyManager`.
