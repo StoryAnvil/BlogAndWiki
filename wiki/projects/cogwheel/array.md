@@ -1,3 +1,4 @@
+# ⚠️ THIS WIKI PAGE IS DEPERACTED! INFORMATION HERE CAN BE OUTDATED!
 # Arrays
 Arrays can store multiple objects.
 

@@ -2,6 +2,7 @@
     "type": "OBJECT",
     "name": "CogArray",
     "summary": "This object stores bunch of other objects",
+    "parent": "easymanager",
     "version": "0.1.0 BETA",
 
     "methods": {
@@ -29,23 +30,11 @@
             "summary": "Adds element to this array",
             "return": "null"
         },
-        "logMe": {
+        "size": {
             "argTypes": [],
             "argNames": [],
-            "summary": "Logs this CogMaster object in minecraft logs",
-            "return": "null"
-        },
-        "toString": {
-            "argTypes": [],
-            "argNames": [],
-            "summary": "Same as running Cogwheel.str passing this object as argument",
-            "return": "cogstring"
-        },
-        "equals": {
-            "argTypes": ["*"],
-            "argNames": ["obj"],
-            "summary": "Check if provided object equals to this object",
-            "return": "cogbool"
+            "summary": "Returns amount of elements in the array",
+            "return": "coginteger"
         }
     }
 }

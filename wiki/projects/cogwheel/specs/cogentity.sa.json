@@ -2,6 +2,7 @@
     "type": "OBJECT",
     "name": "CogEntity",
     "summary": "Represents any minecraft entity including but not limiting to Cogwheel NPCs",
+    "parent": "easymanager",
     "version": "0.1.0 BETA",
 
     "methods": {
@@ -23,23 +24,95 @@
             "summary": "Returns this entity as entity (this method only usefull for other objects like NPCs)",
             "return": "cogentity"
         },
-        "logMe": {
+        "teleport": {
+            "argTypes": ["coginteger", "coginteger", "coginteger"],
+            "argNames": ["x", "y", "z"],
+            "summary": "Teleports this entity to specified location",
+            "return": "cogentity"
+        },
+        "teleport": {
+            "argTypes": ["cogdouble", "cogdouble", "cogdouble"],
+            "argNames": ["x", "y", "z"],
+            "summary": "Teleports this entity to specified location",
+            "return": "cogentity"
+        },
+        "turn": {
+            "argTypes": ["cogdouble", "cogdouble"],
+            "argNames": ["pitch", "yaw"],
+            "summary": "Turns this entity to specified pitch and yaw",
+            "return": "cogentity"
+        },
+        "teleport2": {
+            "argTypes": ["cogdouble", "cogdouble", "cogdouble", "cogdouble", "cogdouble"],
+            "argNames": ["x", "y", "z", "pitch", "yaw"],
+            "summary": "Teleports entity to specified location and turns it to specified pitch and yaw",
+            "return": "cogentity"
+        },
+        "getX": {
             "argTypes": [],
             "argNames": [],
-            "summary": "Logs this CogMaster object in minecraft logs",
+            "summary": "Returns this entity X position",
+            "return": "cogdouble"
+        },
+        "getY": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns this entity Y position",
+            "return": "cogdouble"
+        },
+        "getZ": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns this entity Z position",
+            "return": "cogdouble"
+        },
+        "getBlockX": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns this entity X position as integer",
+            "return": "coginteger"
+        },
+        "getBlockY": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns this entity Y position as integer",
+            "return": "coginteger"
+        },
+        "getBlockZ": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns this entity Z position as integer",
+            "return": "coginteger"
+        },
+        "kill": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Kills this entity",
             "return": "null"
         },
-        "toString": {
+        "hasTag": {
+            "argTypes": ["cogstring"],
+            "argNames": ["tag"],
+            "summary": "Returns true if entity does have specified tag",
+            "return": "cogbool"
+        },
+        "addTag": {
+            "argTypes": ["cogstring"],
+            "argNames": ["tag"],
+            "summary": "Add specifed tag to entity. Returns true if entity did not have this tag already",
+            "return": "cogbool"
+        },
+        "removeTag": {
+            "argTypes": ["cogstring"],
+            "argNames": ["tag"],
+            "summary": "Removes specifed tag from entity. Returns true if entity did have deleted tag",
+            "return": "cogbool"
+        },
+        "getTags": {
             "argTypes": [],
             "argNames": [],
-            "summary": "Same as running Cogwheel.str passing this object as argument",
-            "return": "cogstring"
-        },
-        "equals": {
-            "argTypes": ["*"],
-            "argNames": ["obj"],
-            "summary": "Check if provided object equals to this object",
-            "return": "cogbool"
+            "summary": "Returns array containing all tags entity has",
+            "return": "cogarray"
         }
     }
 }

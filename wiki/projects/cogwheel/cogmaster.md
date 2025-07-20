@@ -1,3 +1,4 @@
+# ⚠️ THIS WIKI PAGE IS DEPERACTED! INFORMATION HERE CAN BE OUTDATED!
 # CogMaster
 CogMaster object is stored in varible called `Cogwheel` in all scripts by default.
 
