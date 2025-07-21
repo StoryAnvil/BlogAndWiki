@@ -1,7 +1,7 @@
 {
     "type": "OBJECT",
     "name": "CogMaster",
-    "summary": "Main Cogwheel Engine object.",
+    "summary": "Main Cogwheel Engine object. Always avalible in varible named \"Cogwheel\" in any script by default",
     "parent": "easymanager",
     "version": "0.1.0 BETA",
 
