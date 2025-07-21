@@ -50,4 +50,4 @@ For example:
 ## Spawning NPCs
 To spawn NPC you can use `/summon storyanvil_cogwheel:npc` command.
 
-#### For more information read <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/cogmaster')">CogMaster Object</a>
+#### For more information read <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/specs/cogmaster.sa.json')">CogMaster Object</a>
