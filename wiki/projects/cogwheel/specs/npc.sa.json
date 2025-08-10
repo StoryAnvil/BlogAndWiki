@@ -3,7 +3,7 @@
     "name": "NPC",
     "summary": "Represents Cogwheel Engine NPC.",
     "parent": "cogentity,easymanager",
-    "version": "0.1.0 BETA",
+    "version": "1.0.0 RELEASE",
 
     "methods": {
         "setName": {
@@ -46,6 +46,12 @@
             "argTypes": ["cogstring"],
             "argNames": ["label"],
             "summary": "Makes NPC wait util StoryAction with provided name was executed",
+            "return": "storyaction"
+        },
+        "animation": {
+            "argTypes": ["cogstring", "coginteger"],
+            "argNames": ["animationName", "ticks"],
+            "summary": "Makes NPC play animation with provided name for provided amount of ticks",
             "return": "storyaction"
         },
         "dialogChoices": {

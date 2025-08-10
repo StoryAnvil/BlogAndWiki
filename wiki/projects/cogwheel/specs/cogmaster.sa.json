@@ -3,14 +3,21 @@
     "name": "CogMaster",
     "summary": "Main Cogwheel Engine object. Always avalible in varible named \"Cogwheel\" in any script by default",
     "parent": "easymanager",
-    "version": "0.1.0 BETA",
+    "version": "1.0.0 RELEASE",
 
     "methods": {
         "log": {
             "argTypes": ["*"],
             "argNames": ["obj"],
-            "summary": "Print provided object",
+            "summary": "Print provided object to minecraft logs",
             "return": "null"
+        },
+        "getTaggedNPC": {
+            "argTypes": ["cogstring"],
+            "argNames": ["tag"],
+            "summary": "Finds and returns NPC with provided [tag](https://minecraft.wiki/w/Commands/tag)",
+            "return": "npc",
+            "noChainCalling": true
         },
         "str": {
             "argTypes": ["*"],
@@ -26,12 +33,15 @@
             "return": "coginteger",
             "text": "This method is used to create varibles because this: `a = ^4` is not possible but `a = Cogwheel.int(^4)` is possible"
         },
-        "getTaggedNPC": {
-            "argTypes": ["cogstring"],
-            "argNames": ["tag"],
-            "summary": "Finds and returns NPC with provided [tag](https://minecraft.wiki/w/Commands/tag)",
-            "return": "npc",
-            "noChainCalling": true
+        "toInt": {
+            "argTypes": ["*"],
+            "argNames": ["obj"],
+            "summary": "Converts provided object to <a data-cg=\"coginteger\">CogInteger</a>"
+        },
+        "toDouble": {
+            "argTypes": ["*"],
+            "argNames": ["obj"],
+            "summary": "Converts provided object to <a data-cg=\"cogdouble\">CogDouble</a>"
         },
         "true": {
             "argTypes": [],
@@ -74,6 +84,54 @@
             "argNames": ["obj"],
             "summary": "Creates list that contains provided object",
             "return": "cogarray"
+        },
+        "dispatchScript": {
+            "argTypes": ["cogstring"],
+            "argNames": ["scriptName"],
+            "summary": "Dispatches script with provided name",
+            "return": "null"
+        },
+        "waitForLabel": {
+            "argTypes": ["cogstring"],
+            "argNames": ["labelName"],
+            "summary": "Makes script wait util <a data-cg=\"storyaction\">StoryAction</a> with provided label",
+            "return": "null"
+        },
+        "skipToLabel": {
+            "argTypes": ["cogstring"],
+            "argNames": ["labelName"],
+            "summary": "Makes script skip all lines of code util it finds line that starts with `@marker ` and provided label",
+            "return": "null"
+        },
+        "isBeltConnected": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns true only if Cogwheel Engine is connected to Belt Protocol Server",
+            "return": "cogbool"
+        },
+        "sendBeltMessage": {
+            "argTypes": ["*"],
+            "argNames": ["msg"],
+            "summary": "Sends belt packet with type `SCRIPT_MESSAGE` to connected Belt Protocol Server with provided argument converted to String as argument",
+            "return": "null"
+        },
+        "addAnimationSource": {
+            "argTypes": ["*"],
+            "argNames": ["msg"],
+            "summary": "Adds provided resource location to animation sources",
+            "return": "null"
+        },
+        "removeAnimationSource": {
+            "argTypes": ["*"],
+            "argNames": ["msg"],
+            "summary": "Removes provided resource location from animation sources",
+            "return": "null"
+        },
+        "clearAnimationSource": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Removes all resource locations from animation sources",
+            "return": "null"
         }
     }
 }

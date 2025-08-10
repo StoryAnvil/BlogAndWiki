@@ -3,7 +3,7 @@
     "name": "CogEntity",
     "summary": "Represents any minecraft entity including but not limiting to Cogwheel NPCs",
     "parent": "easymanager",
-    "version": "0.1.0 BETA",
+    "version": "1.0.0 RELEASE",
 
     "methods": {
         "getEntityType": {
@@ -113,6 +113,42 @@
             "argNames": [],
             "summary": "Returns array containing all tags entity has",
             "return": "cogarray"
+        },
+        "putInt": {
+            "argTypes": ["cogstring", "coginteger"],
+            "argNames": ["key", "value"],
+            "summary": "Stores provided value in entities NBT with provided key. Returns this entity",
+            "return": "cogentity"
+        },
+        "putString": {
+            "argTypes": ["cogstring", "cogstring"],
+            "argNames": ["key", "value"],
+            "summary": "Stores provided value in entities NBT with provided key. Returns this entity",
+            "return": "cogentity"
+        },
+        "putBoolean": {
+            "argTypes": ["cogstring", "cogbool"],
+            "argNames": ["key", "value"],
+            "summary": "Stores provided value in entities NBT with provided key. Returns this entity",
+            "return": "cogentity"
+        },
+        "getInt": {
+            "argTypes": ["cogstring"],
+            "argNames": ["key"],
+            "summary": "Returns stored value in provided key from entities NBT",
+            "return": "coginteger"
+        },
+        "getString": {
+            "argTypes": ["cogstring"],
+            "argNames": ["key"],
+            "summary": "Returns stored value in provided key from entities NBT",
+            "return": "cogstring"
+        },
+        "getBoolean": {
+            "argTypes": ["cogstring"],
+            "argNames": ["key"],
+            "summary": "Returns stored value in provided key from entities NBT",
+            "return": "cogbool"
         }
     }
 }

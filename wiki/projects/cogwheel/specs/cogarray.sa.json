@@ -3,7 +3,7 @@
     "name": "CogArray",
     "summary": "This object stores bunch of other objects",
     "parent": "easymanager",
-    "version": "0.1.0 BETA",
+    "version": "1.0.0 RELEASE",
 
     "methods": {
         "$<method name>": {

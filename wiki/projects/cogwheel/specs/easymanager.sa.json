@@ -2,7 +2,7 @@
     "type": "OBJECT",
     "name": "EasyManager",
     "summary": "This is base object for other objects",
-    "version": "0.1.0 BETA",
+    "version": "1.0.0 RELEASE",
 
     "methods": {
         "logMe": {
