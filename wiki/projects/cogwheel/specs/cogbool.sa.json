@@ -3,13 +3,31 @@
     "name": "CogBool",
     "summary": "This object represents a boolean (TRUE or FALSE)",
     "parent": "easymanager",
-    "version": "0.1.0 BETA",
+    "version": "1.0.0 RELEASE",
 
     "methods": {
         "not": {
             "argTypes": [],
             "argNames": [],
             "summary": "Returns FALSE if this boolean is TRUE, otherwise returns TRUE",
+            "return": "cogbool"
+        },
+        "and": {
+            "argTypes": ["cogbool"],
+            "argNames": ["b"],
+            "summary": "Returns TRUE only if this boolean is TRUE and provided boolean is TRUE",
+            "return": "cogbool"
+        },
+        "or": {
+            "argTypes": ["cogbool"],
+            "argNames": ["b"],
+            "summary": "Returns TRUE only if this boolean is TRUE or provided boolean is TRUE or both this boolean and provided boolean are TRUE",
+            "return": "cogbool"
+        },
+        "xor": {
+            "argTypes": ["cogbool"],
+            "argNames": ["b"],
+            "summary": "Returns TRUE only if this boolean is TRUE or provided boolean is TRUE",
             "return": "cogbool"
         }
     }
