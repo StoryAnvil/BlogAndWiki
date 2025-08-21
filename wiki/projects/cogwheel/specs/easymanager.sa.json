@@ -2,15 +2,9 @@
     "type": "OBJECT",
     "name": "EasyManager",
     "summary": "This is base object for other objects",
-    "version": "1.0.0 RELEASE",
+    "version": "2.0.0 RELEASE",
 
     "methods": {
-        "logMe": {
-            "argTypes": [],
-            "argNames": [],
-            "summary": "Logs this CogMaster object in minecraft logs",
-            "return": "null"
-        },
         "toString": {
             "argTypes": [],
             "argNames": [],

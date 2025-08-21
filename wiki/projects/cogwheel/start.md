@@ -7,7 +7,7 @@ CogScripts are core of Cogwheel Engine. CogScripts are written in CogScript prog
 
 To create CogScript you need to create file in `.minecraft/config/cog` folder with `.sa` extension.
 
-to run CogScripts in game you need to run `@storyanvil dispatch-script` command in chat.
+to run CogScripts in game you need to run `@storyanvil dispatch-script def:<script file name>` command in chat.
 
 ### Example
 Let's test Cogwheel Engine by creating script that writes `Hello, World!` in chat.
@@ -17,7 +17,7 @@ Let's test Cogwheel Engine by creating script that writes `Hello, World!` in cha
 ```
 Cogwheel.log("Hello World")
 ```
-3. Type `/@storyanvil dispatch-script hello_world.sa` in chat
+3. Type `/@storyanvil dispatch-script def:hello_world.sa` in chat
 4. You will see `Hello World!` in miencraft logs
 
 ## Varibles

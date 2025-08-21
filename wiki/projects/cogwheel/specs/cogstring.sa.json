@@ -3,7 +3,7 @@
     "name": "CogString",
     "summary": "This object represents some text",
     "parent": "easymanager",
-    "version": "1.0.0 RELEASE",
+    "version": "2.0.0 RELEASE",
 
     "methods": {
         "append": {
