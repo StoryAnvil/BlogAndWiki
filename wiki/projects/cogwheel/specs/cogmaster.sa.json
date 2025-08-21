@@ -3,7 +3,7 @@
     "name": "CogMaster",
     "summary": "Main Cogwheel Engine object. Always avalible in varible named \"Cogwheel\" in any script by default",
     "parent": "easymanager",
-    "version": "1.0.0 RELEASE",
+    "version": "2.0.0 RELEASE",
 
     "methods": {
         "log": {
@@ -91,10 +91,28 @@
             "summary": "Dispatches script with provided name",
             "return": "null"
         },
+        "scheduleScript": {
+            "argTypes": ["cogstring", "coginteger"],
+            "argNames": ["scriptName", "mills"],
+            "summary": "Dispatches script with provided name after provided time of milleseconds",
+            "return": "null"
+        },
+        "scheduleThis": {
+            "argTypes": ["coginteger"],
+            "argNames": ["mills"],
+            "summary": "Yeilds(make wait) this script for provided time of milleseconds",
+            "return": "null"
+        },
         "waitForLabel": {
             "argTypes": ["cogstring"],
             "argNames": ["labelName"],
             "summary": "Makes script wait util <a data-cg=\"storyaction\">StoryAction</a> with provided label",
+            "return": "null"
+        },
+        "dispatchScriptGlobal": {
+            "argTypes": ["cogstring"],
+            "argNames": ["scriptName"],
+            "summary": "Dispatched script using `/@storyanvil dispatch-script <provided script name>`",
             "return": "null"
         },
         "skipToLabel": {
@@ -131,6 +149,24 @@
             "argTypes": [],
             "argNames": [],
             "summary": "Removes all resource locations from animation sources",
+            "return": "null"
+        },
+        "createHashmap": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Creates new hashmap",
+            "return": "null"
+        },
+        "time": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns amount of milliseconds from server startup",
+            "return": "coglong"
+        },
+        "dump": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Prints all variables from this script into minecraft log",
             "return": "null"
         }
     }

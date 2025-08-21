@@ -3,7 +3,7 @@
     "name": "CogPlayer",
     "summary": "This object represents minecraft player",
     "parent": "cogentity,easymanager",
-    "version": "1.0.0 RELEASE",
+    "version": "2.0.0 RELEASE",
 
     "methods": {
         "sendMessage": {
@@ -11,6 +11,24 @@
             "argNames": ["msg"],
             "summary": "Sends player provided chat message",
             "return": "null"
+        },
+        "toEntity": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns this NPC as cogentity",
+            "return": "cogentity"
+        },
+        "takeItem": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Takes 1 item from player's hand",
+            "return": "null"
+        },
+        "getStoryTag": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns string from item in player's hand NBT stored in key named `story`",
+            "return": "cogstring"
         }
     }
 }

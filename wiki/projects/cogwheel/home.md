@@ -17,7 +17,7 @@ And you can report any bugs you found on [github issues](https://github.com/Stor
 ## Wiki tree
 
 - <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/start')">Getting started</a>
-- <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/manifests')">Manifests (listening to events)</a>
+- <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/specs/manifest.sa.json')">Manifests (listening to events)</a>
 - <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/animations')">Custom animations for NPCs</a>
 - <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/specs/cogarray.sa.json')">Arrays</a>
 - <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/specs/cogbool.sa.json')">Booleans</a>
