@@ -10,7 +10,7 @@ To create CogScript you need to create file in `.minecraft/config/cog` folder wi
 to run CogScripts in game you need to run `@storyanvil dispatch-script def:<script file name>` command in chat.
 
 ### Example
-Let's test Cogwheel Engine by creating script that writes `Hello, World!` in chat.
+Let's test Cogwheel Engine by creating script that writes `Hello, World!` in minecraft logs.
 
 1. Create file `.minecraft/config/cog/hello_world.sa`.
 2. Paste following code in it:
