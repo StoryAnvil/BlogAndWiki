@@ -1,0 +1,65 @@
+{
+    "type": "OBJECT",
+    "name": "NPC",
+    "summary": "Represents Cogwheel Engine NPC.",
+    "parent": "cogentity,easymanager",
+    "version": "1.0.0 RELEASE",
+
+    "methods": {
+        "setName": {
+            "argTypes": ["cogstring"],
+            "argNames": ["name"],
+            "summary": "Changes NPC's name to a new one",
+            "return": "null"
+        },
+        "getName": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns NPC's name",
+            "return": "cogstring"
+        },
+        "setSkin": {
+            "argTypes": ["cogstring"],
+            "argNames": ["skin"],
+            "summary": "Changes NPC's skin name to a provided one. Skin texture is taken from resource location `storyanvil_cogwheel:textures/entity/npc/<skin name>`",
+            "return": "null"
+        },
+        "getSkin": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns NPC's skin name",
+            "return": "cogstring"
+        },
+        "chat": {
+            "argTypes": ["cogstring"],
+            "argNames": ["msg"],
+            "summary": "Makes NPC say provided string",
+            "return": "storyaction"
+        },
+        "pathfind": {
+            "argTypes": ["coginteger", "coginteger", "coginteger"],
+            "argNames": ["x", "y", "z"],
+            "summary": "Makes NPC find and follow path to provided coordinates",
+            "return": "storyaction"
+        },
+        "waitForLabel": {
+            "argTypes": ["cogstring"],
+            "argNames": ["label"],
+            "summary": "Makes NPC wait util StoryAction with provided name was executed",
+            "return": "storyaction"
+        },
+        "animation": {
+            "argTypes": ["cogstring", "coginteger"],
+            "argNames": ["animationName", "ticks"],
+            "summary": "Makes NPC play animation with provided name for provided amount of ticks",
+            "return": "storyaction"
+        },
+        "dialogChoices": {
+            "argTypes": ["cogstring", "cogstring", "cogstring", "cogstring"],
+            "argNames": ["choice1", "choice2", "choice3", "choice4..."],
+            "summary": "Allows player to choice one of provided dialog choices. You can provide any amount of cogstrings as arguments",
+            "return": "coginteger",
+            "noChainCalling": true
+        }
+    }
+}

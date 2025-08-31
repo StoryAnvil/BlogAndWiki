@@ -1,0 +1,10 @@
+{
+    "type": "OBJECT",
+    "name": "Event Callback",
+    "summary": "This object only accessible by Cogwheel.getEvent() method only when script was run by manifest event handler. Check information about specific event to know what properties then object have",
+    "parent": "easymanager",
+    "version": "1.0.0 RELEASE",
+
+    "methods": {
+    }
+}

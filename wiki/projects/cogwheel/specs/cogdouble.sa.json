@@ -1,0 +1,58 @@
+{
+    "type": "OBJECT",
+    "name": "CogDouble",
+    "summary": "CogDouble represents a deciminal number",
+    "parent": "easymanager",
+    "version": "2.0.0 RELEASE",
+
+    "methods": {
+        "add": {
+            "argTypes": ["cogdouble"],
+            "argNames": ["i"],
+            "summary": "Adds provided double to this one. Returns this double",
+            "return": "cogdouble"
+        },
+        "subtract": {
+            "argTypes": ["cogdouble"],
+            "argNames": ["i"],
+            "summary": "Substracts provided double from this one. Returns this double",
+            "return": "cogdouble"
+        },
+        "multiply": {
+            "argTypes": ["cogdouble"],
+            "argNames": ["i"],
+            "summary": "Multiplies this double by provided run. Returns this double",
+            "return": "cogdouble"
+        },
+        "divide": {
+            "argTypes": ["cogdouble"],
+            "argNames": ["i"],
+            "summary": "Divides this double by provided one. Returns this double",
+            "return": "cogdouble"
+        },
+        "clamp": {
+            "argTypes": ["cogdouble", "cogdouble"],
+            "argNames": ["min", "max"],
+            "summary": "If this double smaller then provided min makes this double equal to provided min or makes this double eqaul to provided max if this double is bigger then max",
+            "return": "cogdouble"
+        },
+        "abs": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "If double is smaller than 0 multiplies it by -1",
+            "return": "cogdouble"
+        },
+        "toInt": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Converts this double to a integer",
+            "return": "coginteger"
+        },
+        "clone": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns new integer equal to this one",
+            "return": "coginteger"
+        }
+    }
+}

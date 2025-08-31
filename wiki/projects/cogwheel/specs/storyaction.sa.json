@@ -1,0 +1,22 @@
+{
+    "type": "OBJECT",
+    "name": "StoryAction",
+    "summary": "Represents action sheduled for something (for example NPC)",
+    "parent": "easymanager",
+    "version": "1.0.0 RELEASE",
+
+    "methods": {
+        "setLabel": {
+            "argTypes": ["cogstring"],
+            "argNames": ["label"],
+            "summary": "Changes action's label to provided one. Returns this storyaction",
+            "return": "storyaction"
+        },
+        "getLabel": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns label assigned to this action",
+            "return": "cogstring"
+        }
+    }
+}

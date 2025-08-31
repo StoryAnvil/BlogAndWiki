@@ -1,0 +1,21 @@
+{
+    "type": "OBJECT",
+    "name": "EasyManager",
+    "summary": "This is base object for other objects",
+    "version": "2.0.0 RELEASE",
+
+    "methods": {
+        "toString": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Same as running Cogwheel.str passing this object as argument",
+            "return": "cogstring"
+        },
+        "equals": {
+            "argTypes": ["*"],
+            "argNames": ["obj"],
+            "summary": "Check if provided object equals to this object",
+            "return": "cogbool"
+        }
+    }
+}

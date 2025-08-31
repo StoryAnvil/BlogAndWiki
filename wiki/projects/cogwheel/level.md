@@ -1,3 +1,4 @@
+# ⚠️ THIS WIKI PAGE IS DEPERACTED! INFORMATION HERE CAN BE OUTDATED!
 # Level object
 Level object represents minecraft world.
 

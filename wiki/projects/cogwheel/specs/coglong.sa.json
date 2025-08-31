@@ -1,0 +1,58 @@
+{
+    "type": "OBJECT",
+    "name": "CogLong",
+    "summary": "CogLong represents an big integer",
+    "parent": "easymanager",
+    "version": "2.0.0 RELEASE",
+
+    "methods": {
+        "add": {
+            "argTypes": ["coglong"],
+            "argNames": ["i"],
+            "summary": "Adds provided integer to this one. Returns this integer",
+            "return": "coglong"
+        },
+        "subtract": {
+            "argTypes": ["coglong"],
+            "argNames": ["i"],
+            "summary": "Substracts provided integer from this one. Returns this integer",
+            "return": "coglong"
+        },
+        "multiply": {
+            "argTypes": ["coglong"],
+            "argNames": ["i"],
+            "summary": "Multiplies this integer by provided run. Returns this integer",
+            "return": "coglong"
+        },
+        "divide": {
+            "argTypes": ["coglong"],
+            "argNames": ["i"],
+            "summary": "Divides this integer by provided one. Returns this integer",
+            "return": "coglong"
+        },
+        "clamp": {
+            "argTypes": ["coglong", "coglong"],
+            "argNames": ["min", "max"],
+            "summary": "If this integer smaller then provided min makes this integer equal to provided min or makes this integer eqaul to provided max if this integer is bigger then max",
+            "return": "coglong"
+        },
+        "abs": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "If integer is smaller than 0 multiplies it by -1",
+            "return": "coglong"
+        },
+        "toDouble": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Converts this integer to a double",
+            "return": "cogdouble"
+        },
+        "clone": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns new integer equal to this one",
+            "return": "coglong"
+        }
+    }
+}

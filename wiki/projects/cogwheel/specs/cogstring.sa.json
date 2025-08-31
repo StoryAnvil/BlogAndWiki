@@ -1,0 +1,80 @@
+{
+    "type": "OBJECT",
+    "name": "CogString",
+    "summary": "This object represents some text",
+    "parent": "easymanager",
+    "version": "2.0.0 RELEASE",
+
+    "methods": {
+        "append": {
+            "argTypes": ["*"],
+            "argNames": ["obj"],
+            "summary": "Object converted to string using its toString method. Adds provided object to end of this string. Returns this string",
+            "return": "cogstring"
+        },
+        "append": {
+            "argTypes": ["*", "*"],
+            "argNames": ["obj1", "obj2..."],
+            "summary": "Any amount of objects can be provided as arguments, all of them will be converted to strings. Adds provided strings to end of this string. Returns this string",
+            "return": "cogstring"
+        },
+        "format": {
+            "argTypes": ["*"],
+            "argNames": ["obj"],
+            "summary": "Replaces first {} in this string with provided object converted to string using object's toString method.",
+            "return": "cogstring"
+        },
+        "format": {
+            "argTypes": ["*", "*"],
+            "argNames": ["obj1", "obj2..."],
+            "summary": "Replaces each {} in this string with one of provided objects converted to string using object's toString method.",
+            "return": "cogstring"
+        },
+        "toUpperCase": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Makes all charecters of this string be UPPER CASE.",
+            "return": "cogstring"
+        },
+        "toLowerCase": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Makes all charecters of this string be lower case.",
+            "return": "cogstring"
+        },
+        "charAt": {
+            "argTypes": ["coginteger"],
+            "argNames": ["i"],
+            "summary": "Returns string that contains character at provided place",
+            "return": "cogstring",
+            "text": "For example for string `StoryAnvil`, `charAt(^2)` will return `o`"
+        },
+        "substring": {
+            "argTypes": ["coginteger"],
+            "argNames": ["from"],
+            "summary": "Returns string that starts with provided character inclusive",
+            "return": "cogstring",
+            "text": "For example for string `StoryAnvil`, `substring(^2)` will return `oryAnvil`"
+        },
+        "substring": {
+            "argTypes": ["coginteger", "coginteger"],
+            "argNames": ["from", "to"],
+            "summary": "Returns string that starts with provided character inclusive and ends with second provided character exclusive",
+            "return": "cogstring",
+            "text": "For example for string `StoryAnvil`, `substring(^2, ^7)` will return `oryAn`"
+        },
+        "replace": {
+            "argTypes": ["*", "*"],
+            "argNames": ["from", "to"],
+            "summary": "Both arguments are converted to string using their toString methods. All occurences of `from` string will be replaced with `to` string",
+            "return": "cogstring",
+            "text": "For example for string `StoryAnvil`, `replace(\"ry\", \"ly\")` will return `StolyAnvil`"
+        },
+        "clone": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns copy of this string",
+            "return": "cogstring"
+        }
+    }
+}

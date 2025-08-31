@@ -1,0 +1,40 @@
+{
+    "type": "OBJECT",
+    "name": "CogArray",
+    "summary": "This object stores bunch of other objects",
+    "parent": "easymanager",
+    "version": "2.0.0 RELEASE",
+
+    "methods": {
+        "$<method name>": {
+            "argTypes": ["*"],
+            "argNames": ["args..."],
+            "summary": "Runs method with method name provided after $ in this method's name with provided args",
+            "return": "null"
+        },
+        "get": {
+            "argTypes": ["coginteger"],
+            "argNames": ["index"],
+            "summary": "Returns element from array in provided index",
+            "return": "?"
+        },
+        "remove": {
+            "argTypes": ["coginteger"],
+            "argNames": ["index"],
+            "summary": "Removes array element with provided index",
+            "return": "null"
+        },
+        "add": {
+            "argTypes": ["*"],
+            "argNames": ["element"],
+            "summary": "Adds element to this array",
+            "return": "null"
+        },
+        "size": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns amount of elements in the array",
+            "return": "coginteger"
+        }
+    }
+}

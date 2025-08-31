@@ -1,0 +1,173 @@
+{
+    "type": "OBJECT",
+    "name": "CogMaster",
+    "summary": "Main Cogwheel Engine object. Always avalible in varible named \"Cogwheel\" in any script by default",
+    "parent": "easymanager",
+    "version": "2.0.0 RELEASE",
+
+    "methods": {
+        "log": {
+            "argTypes": ["*"],
+            "argNames": ["obj"],
+            "summary": "Print provided object to minecraft logs",
+            "return": "null"
+        },
+        "getTaggedNPC": {
+            "argTypes": ["cogstring"],
+            "argNames": ["tag"],
+            "summary": "Finds and returns NPC with provided [tag](https://minecraft.wiki/w/Commands/tag)",
+            "return": "npc",
+            "noChainCalling": true
+        },
+        "str": {
+            "argTypes": ["*"],
+            "argNames": ["obj"],
+            "summary": "Converts provided object to <a data-cg=\"cogstring\">CogString</a>",
+            "return": "cogstring",
+            "text": "This method must be used to create strings in varibles because varibles can't be created without running method.$$ $$For example, code below is invalid:$$```$$a = \"Hello World!\" $$```$$To fix this code use:$$```$$a = Cogwheel.str(\"Hello World!\")$$```$$## Objects other than CogStrings$$`Cogwheel.str` supports absolutly any object and converts it to string.$$Try experementing a bit to know how this works"
+        },
+        "int": {
+            "argTypes": ["coginteger"],
+            "argNames": ["int"],
+            "summary": "Returns provided CogInteger",
+            "return": "coginteger",
+            "text": "This method is used to create varibles because this: `a = ^4` is not possible but `a = Cogwheel.int(^4)` is possible"
+        },
+        "toInt": {
+            "argTypes": ["*"],
+            "argNames": ["obj"],
+            "summary": "Converts provided object to <a data-cg=\"coginteger\">CogInteger</a>"
+        },
+        "toDouble": {
+            "argTypes": ["*"],
+            "argNames": ["obj"],
+            "summary": "Converts provided object to <a data-cg=\"cogdouble\">CogDouble</a>"
+        },
+        "true": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns true",
+            "return": "cogbool"
+        },
+        "false": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns false",
+            "return": "cogbool"
+        },
+        "getLevel": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns StoryLevel",
+            "return": "storylevel"
+        },
+        "disposeVariable": {
+            "argTypes": ["cogstring"],
+            "argNames": ["name"],
+            "summary": "Deletes varible with provided name",
+            "return": "null"
+        },
+        "getEvent": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns event callback if script was dispatched by event handler",
+            "return": "event_callback"
+        },
+        "randomInt": {
+            "argTypes": ["coginteger", "coginteger"],
+            "argNames": ["min", "max"],
+            "summary": "Returns random integer between specified range",
+            "return": "coginteger"
+        },
+        "createList": {
+            "argTypes": ["*"],
+            "argNames": ["obj"],
+            "summary": "Creates list that contains provided object",
+            "return": "cogarray"
+        },
+        "dispatchScript": {
+            "argTypes": ["cogstring"],
+            "argNames": ["scriptName"],
+            "summary": "Dispatches script with provided name",
+            "return": "null"
+        },
+        "scheduleScript": {
+            "argTypes": ["cogstring", "coginteger"],
+            "argNames": ["scriptName", "mills"],
+            "summary": "Dispatches script with provided name after provided time of milleseconds",
+            "return": "null"
+        },
+        "scheduleThis": {
+            "argTypes": ["coginteger"],
+            "argNames": ["mills"],
+            "summary": "Yeilds(make wait) this script for provided time of milleseconds",
+            "return": "null"
+        },
+        "waitForLabel": {
+            "argTypes": ["cogstring"],
+            "argNames": ["labelName"],
+            "summary": "Makes script wait util <a data-cg=\"storyaction\">StoryAction</a> with provided label",
+            "return": "null"
+        },
+        "dispatchScriptGlobal": {
+            "argTypes": ["cogstring"],
+            "argNames": ["scriptName"],
+            "summary": "Dispatched script using `/@storyanvil dispatch-script <provided script name>`",
+            "return": "null"
+        },
+        "skipToLabel": {
+            "argTypes": ["cogstring"],
+            "argNames": ["labelName"],
+            "summary": "Makes script skip all lines of code util it finds line that starts with `@marker ` and provided label",
+            "return": "null"
+        },
+        "isBeltConnected": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns true only if Cogwheel Engine is connected to Belt Protocol Server",
+            "return": "cogbool"
+        },
+        "sendBeltMessage": {
+            "argTypes": ["*"],
+            "argNames": ["msg"],
+            "summary": "Sends belt packet with type `SCRIPT_MESSAGE` to connected Belt Protocol Server with provided argument converted to String as argument",
+            "return": "null"
+        },
+        "addAnimationSource": {
+            "argTypes": ["*"],
+            "argNames": ["msg"],
+            "summary": "Adds provided resource location to animation sources",
+            "return": "null"
+        },
+        "removeAnimationSource": {
+            "argTypes": ["*"],
+            "argNames": ["msg"],
+            "summary": "Removes provided resource location from animation sources",
+            "return": "null"
+        },
+        "clearAnimationSource": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Removes all resource locations from animation sources",
+            "return": "null"
+        },
+        "createHashmap": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Creates new hashmap",
+            "return": "null"
+        },
+        "time": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns amount of milliseconds from server startup",
+            "return": "coglong"
+        },
+        "dump": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Prints all variables from this script into minecraft log",
+            "return": "null"
+        }
+    }
+}

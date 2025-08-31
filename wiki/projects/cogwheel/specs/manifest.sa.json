@@ -1,0 +1,34 @@
+{
+    "type": "OBJECT",
+    "name": "MANIFEST",
+    "summary": "This object is always avalible in default `MANIFEST` variable",
+    "parent": "easymanager",
+    "version": "2.0.0 RELEASE",
+
+    "methods": {
+        "subscribeEvent": {
+            "argTypes": ["cogstring", "cogstring"],
+            "argNames": ["eventType", "scriptName"],
+            "summary": "Subscribes script with provided name to provided event",
+            "return": "null"
+        },
+        "unsubscribeEvent": {
+            "argTypes": ["cogstring", "cogstring"],
+            "argNames": ["eventType", "scriptName"],
+            "summary": "Unsubscribes script with provided name from provided event",
+            "return": "null"
+        },
+        "clearEvent": {
+            "argTypes": ["cogstring"],
+            "argNames": ["eventType"],
+            "summary": "Unsubscribes all scripts from provided event",
+            "return": "null"
+        },
+        "requireLibrary": {
+            "argTypes": ["cogstring"],
+            "argNames": ["libraryName"],
+            "summary": "Reports exception in minecraft logs if provided library is not loaded and stops execution of this script.",
+            "return": "null"
+        }
+    }
+}

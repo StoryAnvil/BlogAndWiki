@@ -1,0 +1,172 @@
+{
+    "type": "OBJECT",
+    "name": "CogEntity",
+    "summary": "Represents any minecraft entity including but not limiting to Cogwheel NPCs",
+    "parent": "easymanager",
+    "version": "2.0.0 RELEASE",
+
+    "methods": {
+        "getEntityType": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns entity's registry id (for example minecraft:creeper)",
+            "return": "cogstring"
+        },
+        "getUUID": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns entity's UUID",
+            "return": "cogstring"
+        },
+        "toEntity": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns this entity as entity (this method only usefull for other objects like NPCs)",
+            "return": "cogentity"
+        },
+        "teleport": {
+            "argTypes": ["coginteger", "coginteger", "coginteger"],
+            "argNames": ["x", "y", "z"],
+            "summary": "Teleports this entity to specified location",
+            "return": "cogentity"
+        },
+        "teleport": {
+            "argTypes": ["cogdouble", "cogdouble", "cogdouble"],
+            "argNames": ["x", "y", "z"],
+            "summary": "Teleports this entity to specified location",
+            "return": "cogentity"
+        },
+        "turn": {
+            "argTypes": ["cogdouble", "cogdouble"],
+            "argNames": ["pitch", "yaw"],
+            "summary": "Turns this entity to specified pitch and yaw",
+            "return": "cogentity"
+        },
+        "teleport2": {
+            "argTypes": ["cogdouble", "cogdouble", "cogdouble", "cogdouble", "cogdouble"],
+            "argNames": ["x", "y", "z", "pitch", "yaw"],
+            "summary": "Teleports entity to specified location and turns it to specified pitch and yaw",
+            "return": "cogentity"
+        },
+        "getX": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns this entity X position",
+            "return": "cogdouble"
+        },
+        "getY": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns this entity Y position",
+            "return": "cogdouble"
+        },
+        "getZ": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns this entity Z position",
+            "return": "cogdouble"
+        },
+        "getBlockX": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns this entity X position as integer",
+            "return": "coginteger"
+        },
+        "getBlockY": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns this entity Y position as integer",
+            "return": "coginteger"
+        },
+        "getBlockZ": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns this entity Z position as integer",
+            "return": "coginteger"
+        },
+        "kill": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Kills this entity",
+            "return": "null"
+        },
+        "hasTag": {
+            "argTypes": ["cogstring"],
+            "argNames": ["tag"],
+            "summary": "Returns true if entity does have specified tag",
+            "return": "cogbool"
+        },
+        "addTag": {
+            "argTypes": ["cogstring"],
+            "argNames": ["tag"],
+            "summary": "Add specifed tag to entity. Returns true if entity did not have this tag already",
+            "return": "cogbool"
+        },
+        "removeTag": {
+            "argTypes": ["cogstring"],
+            "argNames": ["tag"],
+            "summary": "Removes specifed tag from entity. Returns true if entity did have deleted tag",
+            "return": "cogbool"
+        },
+        "getTags": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns array containing all tags entity has",
+            "return": "cogarray"
+        },
+        "putInt": {
+            "argTypes": ["cogstring", "coginteger"],
+            "argNames": ["key", "value"],
+            "summary": "Stores provided value in entities NBT with provided key. Returns this entity",
+            "return": "cogentity"
+        },
+        "getInt": {
+            "argTypes": ["cogstring"],
+            "argNames": ["key"],
+            "summary": "Returns stored value in provided key from entities NBT",
+            "return": "coginteger"
+        },
+        "putString": {
+            "argTypes": ["cogstring", "cogstring"],
+            "argNames": ["key", "value"],
+            "summary": "Stores provided value in entities NBT with provided key. Returns this entity",
+            "return": "cogentity"
+        },
+        "getString": {
+            "argTypes": ["cogstring"],
+            "argNames": ["key"],
+            "summary": "Returns stored value in provided key from entities NBT",
+            "return": "cogstring"
+        },
+        "putBoolean": {
+            "argTypes": ["cogstring", "cogbool"],
+            "argNames": ["key", "value"],
+            "summary": "Stores provided value in entities NBT with provided key. Returns this entity",
+            "return": "cogentity"
+        },
+        "getBoolean": {
+            "argTypes": ["cogstring"],
+            "argNames": ["key"],
+            "summary": "Returns stored value in provided key from entities NBT",
+            "return": "cogbool"
+        },
+        "putLong": {
+            "argTypes": ["cogstring", "coglong"],
+            "argNames": ["key", "value"],
+            "summary": "Stores provided value in entities NBT with provided key. Returns this entity",
+            "return": "cogentity"
+        },
+        "getLong": {
+            "argTypes": ["cogstring"],
+            "argNames": ["key"],
+            "summary": "Returns stored value in provided key from entities NBT",
+            "return": "coglong"
+        },
+        "getDisplayName": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns entity's display name",
+            "return": "cogstring"
+        }
+    }
+}
