@@ -3,7 +3,7 @@
     "name": "NPC",
     "summary": "Represents Cogwheel Engine NPC.",
     "parent": "cogentity,easymanager",
-    "version": "1.0.0 RELEASE",
+    "version": "2.5.0 RELEASE",
 
     "methods": {
         "setName": {
@@ -28,6 +28,18 @@
             "argTypes": [],
             "argNames": [],
             "summary": "Returns NPC's skin name",
+            "return": "cogstring"
+        },
+        "setModel": {
+            "argTypes": ["cogstring"],
+            "argNames": ["skin"],
+            "summary": "Changes NPC's model name to a provided one. Model is taken from resource location `storyanvil_cogwheel:geo/entity/<model name>.geo.json`",
+            "return": "null"
+        },
+        "getModel": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns NPC's model name",
             "return": "cogstring"
         },
         "chat": {

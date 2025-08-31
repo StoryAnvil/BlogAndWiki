@@ -2,7 +2,7 @@
     "type": "EVENTS",
     "name": "Event List",
     "summary": "This events can be defined in a <a onclick=\"$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/manifests')\">Manifests</a>",
-    "version": "2.0.0 RELEASE",
+    "version": "2.5.0 RELEASE",
 
     "events": {
 

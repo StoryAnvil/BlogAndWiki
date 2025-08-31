@@ -3,7 +3,7 @@
     "name": "CogMaster",
     "summary": "Main Cogwheel Engine object. Always avalible in varible named \"Cogwheel\" in any script by default",
     "parent": "easymanager",
-    "version": "2.0.0 RELEASE",
+    "version": "2.5.0 RELEASE",
 
     "methods": {
         "log": {

@@ -3,7 +3,7 @@
     "name": "StoryAction",
     "summary": "Represents action sheduled for something (for example NPC)",
     "parent": "easymanager",
-    "version": "1.0.0 RELEASE",
+    "version": "2.5.0 RELEASE",
 
     "methods": {
         "setLabel": {
