@@ -3,7 +3,7 @@
     "name": "StoryLevel",
     "summary": "This object represents minecraft world",
     "parent": "easymanager",
-    "version": "1.0.0 RELEASE",
+    "version": "2.5.0 RELEASE",
 
     "methods": {
         "runCommand": {
