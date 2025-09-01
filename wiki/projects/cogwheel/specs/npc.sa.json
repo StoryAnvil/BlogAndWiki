@@ -3,7 +3,7 @@
     "name": "NPC",
     "summary": "Represents Cogwheel Engine NPC.",
     "parent": "cogentity,easymanager",
-    "version": "2.5.0 RELEASE",
+    "version": "2.6.0 RELEASE",
 
     "methods": {
         "setName": {
