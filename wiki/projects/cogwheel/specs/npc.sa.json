@@ -72,6 +72,25 @@
             "summary": "Allows player to choice one of provided dialog choices. You can provide any amount of cogstrings as arguments",
             "return": "coginteger",
             "noChainCalling": true
+        },
+        "dialogBlocking": {
+            "argTypes": ["cogstring", "cogstring", "coginteger"],
+            "argNames": ["text", "texture", "ticks"],
+            "summary": "Makes NPC say provided text with UI taking provided amount of ticks in time. This property makes script wait utill NPC finishes talking. Texture is taken from resource location `storyanvil_cogwheel:textures/dialog/<provided texture name>.png`.",
+            "return": "null",
+            "noChainCalling": true
+        },
+        "dialogNonBlocking": {
+            "argTypes": ["cogstring", "cogstring", "coginteger"],
+            "argNames": ["text", "texture", "ticks"],
+            "summary": "Makes NPC say provided text with UI taking provided amount of ticks in time. This property **does not** make script wait utill NPC finishes talking. Texture is taken from resource location `storyanvil_cogwheel:textures/dialog/<provided texture name>.png`.",
+            "return": "null"
+        },
+        "dialogChoiceUI": {
+            "argTypes": ["cogstring", "cogstring", "coginteger"],
+            "argNames": ["text", "texture", "ticks"],
+            "summary": "Makes NPC ask player to choose an option. First provided CogString is NPC's question. Last CogString is texture name for UI (Actual texture is taken from resource location `storyanvil_cogwheel:textures/dialog/<provided texture name>.png`). All other CogStrings are options for player to select",
+            "return": "null"
         }
     }
 }
