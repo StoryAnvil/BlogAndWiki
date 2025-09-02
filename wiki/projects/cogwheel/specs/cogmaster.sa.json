@@ -36,12 +36,14 @@
         "toInt": {
             "argTypes": ["*"],
             "argNames": ["obj"],
-            "summary": "Converts provided object to <a data-cg=\"coginteger\">CogInteger</a>"
+            "summary": "Converts provided object to <a data-cg=\"coginteger\">CogInteger</a>",
+            "return": "null"
         },
         "toDouble": {
             "argTypes": ["*"],
             "argNames": ["obj"],
-            "summary": "Converts provided object to <a data-cg=\"cogdouble\">CogDouble</a>"
+            "summary": "Converts provided object to <a data-cg=\"cogdouble\">CogDouble</a>",
+            "return": "null"
         },
         "true": {
             "argTypes": [],
@@ -168,6 +170,12 @@
             "argNames": [],
             "summary": "Prints all variables from this script into minecraft log",
             "return": "null"
+        },
+        "choose": {
+            "argTypes": ["cogbool", "*", "*"],
+            "argNames": ["choice", "A", "B"],
+            "summary": "If first argument is TRUE, A is returned. B returned otherwise",
+            "return": "*"
         }
     }
 }
