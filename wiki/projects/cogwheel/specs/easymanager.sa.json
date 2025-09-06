@@ -2,7 +2,7 @@
     "type": "OBJECT",
     "name": "EasyManager",
     "summary": "This is base object for other objects",
-    "version": "2.5.0 RELEASE",
+    "version": "2.8.0 RELEASE",
 
     "methods": {
         "toString": {
@@ -16,6 +16,12 @@
             "argNames": ["obj"],
             "summary": "Check if provided object equals to this object",
             "return": "cogbool"
+        },
+        "asInvoker": {
+            "argTypes": ["cogstring"],
+            "argNames": ["property name"],
+            "summary": "Returns CogInvoker for property of this object with provided name",
+            "return": "coginvoker"
         }
     }
 }

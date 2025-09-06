@@ -3,7 +3,7 @@
     "name": "StoryAction",
     "summary": "Represents action sheduled for something (for example NPC)",
     "parent": "easymanager",
-    "version": "2.5.0 RELEASE",
+    "version": "2.8.0 RELEASE",
 
     "methods": {
         "setLabel": {
@@ -17,6 +17,19 @@
             "argNames": [],
             "summary": "Returns label assigned to this action",
             "return": "cogstring"
+        },
+        "blocking": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Makes script wait util this StoryAction was completed. Incompatible with then property",
+            "return": "null",
+            "noChainCalling": true
+        },
+        "then": {
+            "argTypes": ["coginvoker"],
+            "argNames": ["exit"],
+            "summary": "Makes StoryAction execute provided invoker when StoryAction was completed. Incompatible with blocking property",
+            "return": "null"
         }
     }
 }

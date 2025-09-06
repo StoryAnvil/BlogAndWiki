@@ -1,0 +1,22 @@
+{
+    "type": "OBJECT",
+    "name": "CogInvoker",
+    "summary": "This object links a property, script or anything other that can be executed",
+    "parent": "easymanager",
+    "version": "2.8.0 RELEASE",
+
+    "methods": {
+        "invoke": {
+            "argTypes": ["*"],
+            "argNames": ["args..."],
+            "summary": "Executes this invoker with provided arguments",
+            "return": "*"
+        },
+        "unlink": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Makes this invoker do nothing when invoked",
+            "return": "null"
+        }
+    }
+}

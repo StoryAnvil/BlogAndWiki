@@ -1,0 +1,22 @@
+{
+    "type": "OBJECT",
+    "name": "CogVarLinkage",
+    "summary": "This object used by Cogwheel Engine. It is not createable from CogScript, but sometimes accessible",
+    "parent": "easymanager",
+    "version": "2.8.0 RELEASE",
+
+    "methods": {
+        "get": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns value stored in linkage",
+            "return": "*"
+        },
+        "set": {
+            "argTypes": ["*"],
+            "argNames": ["value"],
+            "summary": "Puts value in linkage",
+            "return": "null"
+        }
+    }
+}

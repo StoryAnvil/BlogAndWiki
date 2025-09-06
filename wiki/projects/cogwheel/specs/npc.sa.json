@@ -3,14 +3,14 @@
     "name": "NPC",
     "summary": "Represents Cogwheel Engine NPC.",
     "parent": "cogentity,easymanager",
-    "version": "2.6.0 RELEASE",
+    "version": "2.8.0 RELEASE",
 
     "methods": {
         "setName": {
             "argTypes": ["cogstring"],
             "argNames": ["name"],
-            "summary": "Changes NPC's name to a new one",
-            "return": "null"
+            "summary": "Changes NPC's name to a new one in instant storyaction",
+            "return": "storyaction"
         },
         "getName": {
             "argTypes": [],
@@ -21,8 +21,8 @@
         "setSkin": {
             "argTypes": ["cogstring"],
             "argNames": ["skin"],
-            "summary": "Changes NPC's skin name to a provided one. Skin texture is taken from resource location `storyanvil_cogwheel:textures/entity/npc/<skin name>`",
-            "return": "null"
+            "summary": "Changes NPC's skin name to a provided one in instant storyaction. Skin texture is taken from resource location `storyanvil_cogwheel:textures/entity/npc/<skin name>`",
+            "return": "storyaction"
         },
         "getSkin": {
             "argTypes": [],
@@ -33,8 +33,8 @@
         "setModel": {
             "argTypes": ["cogstring"],
             "argNames": ["skin"],
-            "summary": "Changes NPC's model name to a provided one. Model is taken from resource location `storyanvil_cogwheel:geo/entity/<model name>.geo.json`",
-            "return": "null"
+            "summary": "Changes NPC's model name to a provided one in instant storyaction. Model is taken from resource location `storyanvil_cogwheel:geo/entity/<model name>.geo.json`",
+            "return": "storyaction"
         },
         "getModel": {
             "argTypes": [],
@@ -45,19 +45,19 @@
         "chat": {
             "argTypes": ["cogstring"],
             "argNames": ["msg"],
-            "summary": "Makes NPC say provided string",
+            "summary": "Makes NPC say provided string in instant storyaction",
             "return": "storyaction"
         },
         "pathfind": {
             "argTypes": ["coginteger", "coginteger", "coginteger"],
             "argNames": ["x", "y", "z"],
-            "summary": "Makes NPC find and follow path to provided coordinates",
+            "summary": "Makes NPC find and follow path to provided coordinates in storyaction",
             "return": "storyaction"
         },
         "waitForLabel": {
             "argTypes": ["cogstring"],
             "argNames": ["label"],
-            "summary": "Makes NPC wait util StoryAction with provided name was executed",
+            "summary": "Makes NPC wait (with storyaction that completes when StoryAction with label ends) util StoryAction with provided label was executed",
             "return": "storyaction"
         },
         "animation": {
@@ -69,7 +69,7 @@
         "dialogChoices": {
             "argTypes": ["cogstring", "cogstring", "cogstring", "cogstring"],
             "argNames": ["choice1", "choice2", "choice3", "choice4..."],
-            "summary": "Allows player to choice one of provided dialog choices. You can provide any amount of cogstrings as arguments",
+            "summary": "Allows player to choice one of provided dialog choices. NPC ask question in newly added instant storyaction. Script will wait util player answers and this storyaction was completed. You can provide any amount of cogstrings as arguments",
             "return": "coginteger",
             "noChainCalling": true
         },
@@ -89,8 +89,8 @@
         "dialogChoiceUI": {
             "argTypes": ["cogstring", "cogstring", "coginteger"],
             "argNames": ["text", "texture", "ticks"],
-            "summary": "Makes NPC ask player to choose an option. First provided CogString is NPC's question. Last CogString is texture name for UI (Actual texture is taken from resource location `storyanvil_cogwheel:textures/dialog/<provided texture name>.png`). All other CogStrings are options for player to select",
-            "return": "null"
+            "summary": "Makes NPC ask player to choose an option. First provided CogString is NPC's question. Last CogString is texture name for UI (Actual texture is taken from resource location `storyanvil_cogwheel:textures/dialog/<provided texture name>.png`). All other CogStrings are options for player to select. Returns index of selected option",
+            "return": "coginteger"
         }
     }
 }

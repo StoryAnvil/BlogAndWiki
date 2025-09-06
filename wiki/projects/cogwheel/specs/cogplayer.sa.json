@@ -2,8 +2,8 @@
     "type": "OBJECT",
     "name": "CogPlayer",
     "summary": "This object represents minecraft player",
-    "parent": "cogentity,easymanager",
-    "version": "2.5.0 RELEASE",
+    "parent": "easymanager",
+    "version": "2.8.0 RELEASE",
 
     "methods": {
         "sendMessage": {
@@ -29,6 +29,30 @@
             "argNames": [],
             "summary": "Returns string from item in player's hand NBT stored in key named `story`",
             "return": "cogstring"
+        },
+        "setCamera": {
+            "argTypes": ["cogdouble", "cogdouble", "cogdouble", "cogdouble", "cogdouble"],
+            "argNames": ["x", "y", "z", "yRotaion", "xRotaion"],
+            "summary": "Forces player's camera to stay in provided coordinates",
+            "return": "null"
+        },
+        "unsetCamera": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Cancels setCamera",
+            "return": "null"
+        },
+        "transCamera": {
+            "argTypes": ["cogdouble", "cogdouble", "cogdouble", "cogdouble", "cogdouble", "cogdouble", "cogdouble", "cogdouble", "cogdouble", "cogdouble", "cogdouble"],
+            "argNames": ["x1", "y1", "z1", "yRotaion1", "xRotaion1", "x2", "y2", "z2", "yRotaion2", "xRotaion2", "ticks"],
+            "summary": "Makes player's camera smoothly tranisiton between provided coordinates taking provided amount of ticks",
+            "return": "null"
+        },
+        "transCameraEnd": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Cancels transCamera",
+            "return": "null"
         }
     }
 }

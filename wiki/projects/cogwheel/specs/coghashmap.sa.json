@@ -1,0 +1,34 @@
+{
+    "type": "OBJECT",
+    "name": "CogHashmap",
+    "summary": "This object stores any amount of objects with CogString idenifiers",
+    "parent": "easymanager",
+    "version": "2.8.0 RELEASE",
+
+    "methods": {
+        "get": {
+            "argTypes": ["cogstring"],
+            "argNames": ["key"],
+            "summary": "Returns element by key",
+            "return": "*"
+        },
+        "put": {
+            "argTypes": ["cogstring", "*"],
+            "argNames": ["key", "value"],
+            "summary": "Sets key to value. Returns value that was store by this key before",
+            "return": "*"
+        },
+        "clear": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Clears all stored values",
+            "return": "null"
+        },
+        "containsKey": {
+            "argTypes": ["cogstring"],
+            "argNames": ["key"],
+            "summary": "Returns true only if there is value stored with this key",
+            "return": "cogbool"
+        }
+    }
+}

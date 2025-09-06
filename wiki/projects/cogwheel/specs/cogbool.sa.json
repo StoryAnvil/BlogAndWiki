@@ -3,7 +3,7 @@
     "name": "CogBool",
     "summary": "This object represents a boolean (TRUE or FALSE)",
     "parent": "easymanager",
-    "version": "2.5.0 RELEASE",
+    "version": "2.8.0 RELEASE",
 
     "methods": {
         "not": {
