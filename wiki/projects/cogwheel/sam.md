@@ -59,6 +59,15 @@ define tell(text) {
 }
 ```
 
+You can use `*return <expression>` syntax to return any object in property.
+For example:
+```cogmodule
+define addOne(n) {
+    # This property takes CogInteger as arguments, clones it, add 1 to it and returns it
+    *return n.clone().add(^1)
+}
+```
+
 ## This variable
 Both in properties and constructors there is additional default variable named `this`.
 
@@ -111,4 +120,14 @@ define tell(text) {
 
 instance = Test_module.new("apple")
 instance.tell("Hello World!")
+```
+
+## CogInvokers with modules
+You can get <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/specs/coginvoker.sa.json')">CogInvoker</a> that invokes module's property by adding `:` before property name. For example:
+```cogscript
+*import def:test_module
+
+instance = Test_module.new("apple")
+invoker = instance.:tell()
+invoker.invoke("Hello World!")
 ```

@@ -3,7 +3,7 @@
     "name": "StoryLevel",
     "summary": "This object represents minecraft world",
     "parent": "easymanager",
-    "version": "2.5.0 RELEASE",
+    "version": "2.8.0 RELEASE",
 
     "methods": {
         "runCommand": {
@@ -17,6 +17,18 @@
             "argNames": [],
             "summary": "Returns array that contains all cogplayers in this world",
             "return": "cogarray"
+        },
+        "put": {
+            "argTypes": ["cogstring", "*"],
+            "argNames": ["key", "value"],
+            "summary": "Stores value to key. This storage is not cleared between minecraft restarts. Value must be one of: CogBool, CogString, CogInteger, CogDouble, CogLong",
+            "return": "null"
+        },
+        "get": {
+            "argTypes": ["cogstring"],
+            "argNames": ["key"],
+            "summary": "Get value by key. This storage is not cleared between minecraft restarts",
+            "return": "*"
         }
     }
 }

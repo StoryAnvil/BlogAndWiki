@@ -3,7 +3,7 @@
     "name": "CogInteger",
     "summary": "CogInteger represents an integer",
     "parent": "easymanager",
-    "version": "2.5.0 RELEASE",
+    "version": "2.8.0 RELEASE",
 
     "methods": {
         "add": {

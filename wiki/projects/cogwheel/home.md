@@ -17,7 +17,10 @@ We will refer to Cogwheel Engine as CE for short. And we will call Cogwheel Engi
 - <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/start')">Getting started</a>
 - <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/adv')">Advanced Scripting (If, Switch, etc.)</a>
 - <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/dialog')">Easy dialogs</a>
-- <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/specs/manifest.sa.json')">Manifests (listening to events)</a>
+- <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/storyactions')">StoryActions (or how NPC think)</a>
+- <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/manifests')">Manifests (listening to events)</a>
+- <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/cogenvironments')">Environments</a>
+- <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/config')">Configuring Cogwheel Engine</a>
 - <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/animations')">Custom animations for NPCs</a>
 - <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/switch')">Switch statement</a>
 - <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/sam')">Modules (custom CogScript objects)</a>

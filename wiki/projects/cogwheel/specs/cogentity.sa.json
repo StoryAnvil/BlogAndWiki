@@ -3,7 +3,7 @@
     "name": "CogEntity",
     "summary": "Represents any minecraft entity including but not limiting to Cogwheel NPCs",
     "parent": "easymanager",
-    "version": "2.5.0 RELEASE",
+    "version": "2.8.0 RELEASE",
 
     "methods": {
         "getEntityType": {
@@ -22,12 +22,6 @@
             "argTypes": [],
             "argNames": [],
             "summary": "Returns this entity as entity (this method only usefull for other objects like NPCs)",
-            "return": "cogentity"
-        },
-        "teleport": {
-            "argTypes": ["coginteger", "coginteger", "coginteger"],
-            "argNames": ["x", "y", "z"],
-            "summary": "Teleports this entity to specified location",
             "return": "cogentity"
         },
         "teleport": {

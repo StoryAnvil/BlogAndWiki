@@ -3,25 +3,13 @@
     "name": "CogString",
     "summary": "This object represents some text",
     "parent": "easymanager",
-    "version": "2.5.0 RELEASE",
+    "version": "2.8.0 RELEASE",
 
     "methods": {
-        "append": {
-            "argTypes": ["*"],
-            "argNames": ["obj"],
-            "summary": "Object converted to string using its toString method. Adds provided object to end of this string. Returns this string",
-            "return": "cogstring"
-        },
         "append": {
             "argTypes": ["*", "*"],
             "argNames": ["obj1", "obj2..."],
             "summary": "Any amount of objects can be provided as arguments, all of them will be converted to strings. Adds provided strings to end of this string. Returns this string",
-            "return": "cogstring"
-        },
-        "format": {
-            "argTypes": ["*"],
-            "argNames": ["obj"],
-            "summary": "Replaces first {} in this string with provided object converted to string using object's toString method.",
             "return": "cogstring"
         },
         "format": {
@@ -50,18 +38,11 @@
             "text": "For example for string `StoryAnvil`, `charAt(^2)` will return `o`"
         },
         "substring": {
-            "argTypes": ["coginteger"],
-            "argNames": ["from"],
-            "summary": "Returns string that starts with provided character inclusive",
-            "return": "cogstring",
-            "text": "For example for string `StoryAnvil`, `substring(^2)` will return `oryAnvil`"
-        },
-        "substring": {
             "argTypes": ["coginteger", "coginteger"],
             "argNames": ["from", "to"],
-            "summary": "Returns string that starts with provided character inclusive and ends with second provided character exclusive",
+            "summary": "Returns string that starts with provided character inclusive and ends with second provided character exclusive. Second argument is optional",
             "return": "cogstring",
-            "text": "For example for string `StoryAnvil`, `substring(^2, ^7)` will return `oryAn`"
+            "text": "For example for string `StoryAnvil`, `substring(^2, ^7)` will return `oryAn`, and for string `StoryAnvil`, `substring(^2)` will return `oryAnvil`"
         },
         "replace": {
             "argTypes": ["*", "*"],

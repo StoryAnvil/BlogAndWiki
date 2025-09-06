@@ -3,7 +3,7 @@
     "name": "CogMaster",
     "summary": "Main Cogwheel Engine object. Always avalible in varible named \"Cogwheel\" in any script by default",
     "parent": "easymanager",
-    "version": "2.5.0 RELEASE",
+    "version": "2.8.0 RELEASE",
 
     "methods": {
         "log": {
@@ -11,6 +11,18 @@
             "argNames": ["obj"],
             "summary": "Print provided object to minecraft logs",
             "return": "null"
+        },
+        "debug": {
+            "argTypes": ["*"],
+            "argNames": ["obj"],
+            "summary": "Print provided object to minecraft logs if debug mode is enabled in config",
+            "return": "null"
+        },
+        "isDebugging": {
+            "argTypes": [],
+            "argNames": [],
+            "summary": "Returns true only if debugging mode is enabled in config",
+            "return": "cogbool"
         },
         "getTaggedNPC": {
             "argTypes": ["cogstring"],
@@ -93,6 +105,12 @@
             "summary": "Dispatches script with provided name",
             "return": "null"
         },
+        "scriptInvoker": {
+            "argTypes": ["cogstring"],
+            "argNames": ["scriptName"],
+            "summary": "Creates invoker that dispatches script",
+            "return": "coginvoker"
+        },
         "scheduleScript": {
             "argTypes": ["cogstring", "coginteger"],
             "argNames": ["scriptName", "mills"],
@@ -156,8 +174,8 @@
         "createHashmap": {
             "argTypes": [],
             "argNames": [],
-            "summary": "Creates new hashmap",
-            "return": "null"
+            "summary": "Creates new empty hashmap",
+            "return": "coghashmap"
         },
         "time": {
             "argTypes": [],
@@ -175,6 +193,12 @@
             "argTypes": ["cogbool", "*", "*"],
             "argNames": ["choice", "A", "B"],
             "summary": "If first argument is TRUE, A is returned. B returned otherwise",
+            "return": "*"
+        },
+        "map": {
+            "argTypes": ["coginteger", "*", "*"],
+            "argNames": ["n", "A1", "A2..."],
+            "summary": "First argument is always CogInteger. Any amount of arguments of any allowed after first CogInteger. Returns argument with number provided by first argument. For example: `map(^0, A, B)` will return A, `map(^1, A, B)` will return B",
             "return": "*"
         }
     }

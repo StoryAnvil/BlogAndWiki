@@ -1,4 +1,4 @@
 [
-    "cogarray", "cogbool", "cogdouble", "cogentity", "coginteger", "coglong", "cogmaster", "cogplayer", "cogstring", "easymanager",
-    "manifest", "npc", "storyaction", "storylevel"
+    "cogarray", "cogbool", "cogdouble", "cogentity", "coghashmap", "coginteger", "coginvoker", "coglong", "cogmaster", "cogplayer", "cogstring",
+    "cogvarlinkage", "easymanager", "manifest", "npc", "storyaction", "storylevel"
 ]

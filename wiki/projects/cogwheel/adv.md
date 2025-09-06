@@ -61,7 +61,7 @@ if (response.equals(^1)) {
 ```
 
 ## Switch statements
-**SWITCH STATEMENTS WERE REMOVED IN FAVOUR OF IF STATEMENTS.**
+**SWITCH STATEMENTS WERE REMOVED IN FAVOUR OF IF STATEMENTS AND THIER BUGGINESS.**
 
 # What's next?
 You can <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/specs/cogmaster.sa.json')">Check what you can do with CogMaster object (stored in default variable named `Cogwheel`)</a>
