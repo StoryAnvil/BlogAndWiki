@@ -24,10 +24,9 @@ We will refer to Cogwheel Engine as CE for short. And we will call Cogwheel Engi
 - <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/animations')">Custom animations for NPCs</a>
 - <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/switch')">Switch statement</a>
 - <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/sam')">Modules (custom CogScript objects)</a>
-- <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/addons/start')">Creating Cogwheel Engine Addons</a>
 - <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/awesome')">Projects that use Cogwheel Engine</a>
 
-## Cogwheel's CogScript classes
+## Cogwheel Engines's CogScript classes
 
 - <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/specs/cogarray.sa.json')">Arrays</a>
 - <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/specs/cogbool.sa.json')">Booleans</a>
@@ -42,3 +41,9 @@ We will refer to Cogwheel Engine as CE for short. And we will call Cogwheel Engi
 - <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/specs/npc.sa.json')">NPCs</a>
 - <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/specs/storyaction.sa.json')">StoryActions</a>
 - <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/specs/storylevel.sa.json')">Level</a>
+- *Some classes can be hidden. Open page of any class and see dropdown menu next to STORYANVIL logo in the top to see all classes*
+
+## Cogwheel Engine Addons
+- <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/addons/start')">Getting Started</a>
+ - <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/addons/maven')">Adding Cogwheel Engine as maven/gradle dependency</a>
+- <a onclick="$story.to('/wiki/wiki.html?p=wiki/projects/cogwheel/addons/dataApi')">Networking, Serialization Utils</a>

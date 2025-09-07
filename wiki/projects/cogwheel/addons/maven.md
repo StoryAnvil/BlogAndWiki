@@ -1,7 +1,7 @@
 # Maven repo
 To add Cogwheel Engine as gradle dependency you can use one of maven repos listed below.
 
-## Cursemaven (recommended)
+## Cursemaven
 Add cursemaven repository to your `build.gradle`
 ```groovy
 repositories {
@@ -22,7 +22,7 @@ dependencies {
 }
 ```
 
-## Modrinth Maven
+## Modrinth Maven (recommended)
 Add modrinth maven repository to your `build.gradle`
 ```groovy
 repositories {

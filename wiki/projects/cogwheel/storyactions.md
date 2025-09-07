@@ -17,6 +17,7 @@ Each StoryAction Queue executes StAcs one-by-one every tick. If StAc is not inst
 For example if NPC was given following StoryActions:
 - Pathfind to `(x=15,y=0,z=34)`
 - Send `"Hello"` to chat
+
 It will first pathfind to `(x=15,y=0,z=34)` and only when NPC finished pathfinding it will chat `"Hello"`.
 
 All StoryActions take at least one tick. Multiple StoryActions cannot be executed in same tick by singular StoryAction Queue.
